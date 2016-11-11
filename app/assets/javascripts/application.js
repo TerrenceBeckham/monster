@@ -6,7 +6,11 @@
 //
 // It's not advisable to add code directly here, but if you do, it'll appear at the bottom of the
 // compiled file.
-//
+//= require jquery
+//= require bootstrap-sprockets
+//= require jquery_ujs
+//= require turbolinks
+//= require_tree 
 // Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
 // about supported directives.
 //
