@@ -5424,3 +5424,10 @@ Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-11-11 16:52:27 
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-11-11 16:52:27 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-11 21:50:58 +0200
+Processing by PlacesController#index as HTML
+  [1m[35mPlace Load (7.7ms)[0m  SELECT "places".* FROM "places"
+  Rendered places/index.html.erb within layouts/application (14.3ms)
+Completed 200 OK in 193ms (Views: 178.1ms | ActiveRecord: 7.7ms)
