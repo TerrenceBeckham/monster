@@ -5844,3 +5844,525 @@ Processing by PlacesController#index as HTML
   [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "places"[0m
   Rendered places/index.html.erb within layouts/application (10.5ms)
 Completed 200 OK in 89ms (Views: 87.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-12 14:29:28 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (1.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PlacesController#index as HTML
+  [1m[35mPlace Load (1.4ms)[0m  SELECT  "places".* FROM "places"  LIMIT 1 OFFSET 0
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "places"[0m
+  Rendered places/index.html.erb within layouts/application (31.9ms)
+Completed 200 OK in 1764ms (Views: 1743.2ms | ActiveRecord: 5.4ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2016-11-12 14:29:30 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-11-12 14:29:30 +0200
+
+
+Started GET "/assets/master.css?body=1" for 127.0.0.1 at 2016-11-12 14:29:30 +0200
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2016-11-12 14:29:30 +0200
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2016-11-12 14:29:30 +0200
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2016-11-12 14:29:30 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-11-12 14:29:30 +0200
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2016-11-12 14:29:30 +0200
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2016-11-12 14:29:30 +0200
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2016-11-12 14:29:30 +0200
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2016-11-12 14:29:30 +0200
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2016-11-12 14:29:30 +0200
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2016-11-12 14:29:30 +0200
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2016-11-12 14:29:30 +0200
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2016-11-12 14:29:30 +0200
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2016-11-12 14:29:30 +0200
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2016-11-12 14:29:30 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-11-12 14:29:30 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-11-12 14:29:30 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-11-12 14:29:30 +0200
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2016-11-12 14:29:30 +0200
+
+
+Started GET "/assets/ignasi_pattern_s.png" for 127.0.0.1 at 2016-11-12 14:29:31 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-12 14:36:59 +0200
+Processing by PlacesController#index as HTML
+  [1m[35mPlace Load (0.4ms)[0m  SELECT  "places".* FROM "places"  LIMIT 1 OFFSET 0
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "places"[0m
+  Rendered places/index.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 84ms (Views: 82.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2016-11-12 14:36:59 +0200
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2016-11-12 14:36:59 +0200
+
+
+Started GET "/assets/master.css?body=1" for 127.0.0.1 at 2016-11-12 14:36:59 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-11-12 14:36:59 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-11-12 14:36:59 +0200
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2016-11-12 14:36:59 +0200
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2016-11-12 14:36:59 +0200
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2016-11-12 14:36:59 +0200
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2016-11-12 14:36:59 +0200
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2016-11-12 14:36:59 +0200
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2016-11-12 14:36:59 +0200
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2016-11-12 14:36:59 +0200
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2016-11-12 14:36:59 +0200
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2016-11-12 14:36:59 +0200
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2016-11-12 14:36:59 +0200
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2016-11-12 14:36:59 +0200
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2016-11-12 14:36:59 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-11-12 14:36:59 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-11-12 14:36:59 +0200
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2016-11-12 14:36:59 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-11-12 14:36:59 +0200
+
+
+Started GET "/assets/ignasi_pattern_s.png" for 127.0.0.1 at 2016-11-12 14:37:01 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-12 14:53:36 +0200
+Processing by PlacesController#index as HTML
+  [1m[35mPlace Load (0.5ms)[0m  SELECT  "places".* FROM "places"  LIMIT 1 OFFSET 0
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "places"[0m
+  Rendered places/index.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 88ms (Views: 86.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/ignasi_pattern_s.png" for 127.0.0.1 at 2016-11-12 14:53:37 +0200
+
+
+Started GET "/assets/master.css?body=1" for 127.0.0.1 at 2016-11-12 14:53:37 +0200
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2016-11-12 14:53:37 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-11-12 14:53:37 +0200
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2016-11-12 14:53:37 +0200
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2016-11-12 14:53:37 +0200
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2016-11-12 14:53:37 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-11-12 14:53:37 +0200
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2016-11-12 14:53:37 +0200
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2016-11-12 14:53:37 +0200
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2016-11-12 14:53:37 +0200
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2016-11-12 14:53:37 +0200
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2016-11-12 14:53:37 +0200
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2016-11-12 14:53:37 +0200
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2016-11-12 14:53:37 +0200
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2016-11-12 14:53:37 +0200
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2016-11-12 14:53:37 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-11-12 14:53:37 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-11-12 14:53:37 +0200
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2016-11-12 14:53:37 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-11-12 14:53:37 +0200
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2016-11-12 14:53:37 +0200
+
+
+Started GET "/assets/ignasi_pattern_s.png" for 127.0.0.1 at 2016-11-12 14:53:43 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-12 14:56:15 +0200
+Processing by PlacesController#index as HTML
+  [1m[35mPlace Load (0.6ms)[0m  SELECT  "places".* FROM "places"  LIMIT 1 OFFSET 0
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "places"[0m
+  Rendered places/index.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 1707ms (Views: 1705.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/master.css?body=1" for 127.0.0.1 at 2016-11-12 14:56:16 +0200
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2016-11-12 14:56:16 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-11-12 14:56:16 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-11-12 14:56:16 +0200
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2016-11-12 14:56:16 +0200
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2016-11-12 14:56:16 +0200
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2016-11-12 14:56:16 +0200
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2016-11-12 14:56:16 +0200
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2016-11-12 14:56:17 +0200
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2016-11-12 14:56:17 +0200
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2016-11-12 14:56:17 +0200
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2016-11-12 14:56:17 +0200
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2016-11-12 14:56:17 +0200
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2016-11-12 14:56:17 +0200
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2016-11-12 14:56:17 +0200
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2016-11-12 14:56:17 +0200
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2016-11-12 14:56:17 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-11-12 14:56:17 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-11-12 14:56:17 +0200
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2016-11-12 14:56:17 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-11-12 14:56:17 +0200
+
+
+Started GET "/assets/ignasi_pattern_s.png" for 127.0.0.1 at 2016-11-12 14:56:17 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-12 15:05:03 +0200
+Processing by PlacesController#index as HTML
+  [1m[35mPlace Load (0.6ms)[0m  SELECT  "places".* FROM "places"  LIMIT 1 OFFSET 0
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "places"[0m
+  Rendered places/index.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 1695ms (Views: 1693.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/master.css?body=1" for 127.0.0.1 at 2016-11-12 15:05:05 +0200
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2016-11-12 15:05:05 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-11-12 15:05:05 +0200
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2016-11-12 15:05:05 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-11-12 15:05:05 +0200
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2016-11-12 15:05:05 +0200
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2016-11-12 15:05:05 +0200
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2016-11-12 15:05:05 +0200
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2016-11-12 15:05:05 +0200
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2016-11-12 15:05:05 +0200
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2016-11-12 15:05:05 +0200
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2016-11-12 15:05:05 +0200
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2016-11-12 15:05:05 +0200
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2016-11-12 15:05:05 +0200
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2016-11-12 15:05:05 +0200
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2016-11-12 15:05:05 +0200
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2016-11-12 15:05:05 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-11-12 15:05:05 +0200
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2016-11-12 15:05:05 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-11-12 15:05:05 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-11-12 15:05:05 +0200
+
+
+Started GET "/assets/school.png" for 127.0.0.1 at 2016-11-12 15:05:14 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-12 15:05:27 +0200
+Processing by PlacesController#index as HTML
+  [1m[35mPlace Load (0.5ms)[0m  SELECT  "places".* FROM "places"  LIMIT 1 OFFSET 0
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "places"[0m
+  Rendered places/index.html.erb within layouts/application (12.9ms)
+Completed 200 OK in 114ms (Views: 111.6ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/master.css?body=1" for 127.0.0.1 at 2016-11-12 15:05:27 +0200
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2016-11-12 15:05:27 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-11-12 15:05:27 +0200
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2016-11-12 15:05:27 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-11-12 15:05:27 +0200
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2016-11-12 15:05:27 +0200
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2016-11-12 15:05:27 +0200
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2016-11-12 15:05:27 +0200
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2016-11-12 15:05:27 +0200
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2016-11-12 15:05:27 +0200
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2016-11-12 15:05:27 +0200
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2016-11-12 15:05:27 +0200
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2016-11-12 15:05:27 +0200
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2016-11-12 15:05:27 +0200
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2016-11-12 15:05:27 +0200
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2016-11-12 15:05:27 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-11-12 15:05:27 +0200
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2016-11-12 15:05:27 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-11-12 15:05:27 +0200
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2016-11-12 15:05:27 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-11-12 15:05:27 +0200
+
+
+Started GET "/assets/school.png" for 127.0.0.1 at 2016-11-12 15:05:30 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-12 15:06:00 +0200
+Processing by PlacesController#index as HTML
+  [1m[35mPlace Load (0.6ms)[0m  SELECT  "places".* FROM "places"  LIMIT 1 OFFSET 0
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "places"[0m
+  Rendered places/index.html.erb within layouts/application (13.4ms)
+Completed 200 OK in 111ms (Views: 108.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/master.css?body=1" for 127.0.0.1 at 2016-11-12 15:06:00 +0200
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2016-11-12 15:06:00 +0200
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2016-11-12 15:06:00 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-11-12 15:06:00 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-11-12 15:06:00 +0200
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2016-11-12 15:06:00 +0200
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2016-11-12 15:06:00 +0200
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2016-11-12 15:06:00 +0200
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2016-11-12 15:06:00 +0200
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2016-11-12 15:06:00 +0200
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2016-11-12 15:06:00 +0200
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2016-11-12 15:06:00 +0200
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2016-11-12 15:06:00 +0200
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2016-11-12 15:06:00 +0200
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2016-11-12 15:06:00 +0200
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2016-11-12 15:06:00 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-11-12 15:06:00 +0200
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2016-11-12 15:06:00 +0200
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2016-11-12 15:06:00 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-11-12 15:06:00 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-11-12 15:06:00 +0200
+
+
+Started GET "/assets/school.png" for 127.0.0.1 at 2016-11-12 15:06:04 +0200
