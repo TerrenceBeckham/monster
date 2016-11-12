@@ -1,8 +1,15 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+.navbar.navbar-inverse {
+    border-radius: 0;
+    box-shadow: 10px 10px 5px grey;
+}
+
 body {
     background: url('/assets/weather.png');
+    /* Trebuchet-based sans serif stack */
+    font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
 }
 
 h1,
