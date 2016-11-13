@@ -10209,3 +10209,205 @@ Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-11-13 15:01:31
 
 
 Started GET "/assets/weather.png" for 127.0.0.1 at 2016-11-13 15:01:36 +0200
+
+
+Started GET "/places/new" for 127.0.0.1 at 2016-11-13 15:03:47 +0200
+Processing by PlacesController#new as HTML
+  Rendered places/new.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 79ms (Views: 78.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/master.css?body=1" for 127.0.0.1 at 2016-11-13 15:03:47 +0200
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2016-11-13 15:03:47 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-11-13 15:03:47 +0200
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2016-11-13 15:03:47 +0200
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2016-11-13 15:03:47 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-11-13 15:03:47 +0200
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2016-11-13 15:03:47 +0200
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2016-11-13 15:03:47 +0200
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2016-11-13 15:03:47 +0200
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2016-11-13 15:03:47 +0200
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2016-11-13 15:03:47 +0200
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2016-11-13 15:03:47 +0200
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2016-11-13 15:03:47 +0200
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2016-11-13 15:03:47 +0200
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2016-11-13 15:03:47 +0200
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2016-11-13 15:03:47 +0200
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2016-11-13 15:03:47 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-11-13 15:03:47 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-11-13 15:03:47 +0200
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2016-11-13 15:03:47 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-11-13 15:03:47 +0200
+
+
+Started GET "/assets/weather.png" for 127.0.0.1 at 2016-11-13 15:03:48 +0200
+
+
+Started POST "/places" for 127.0.0.1 at 2016-11-13 15:15:16 +0200
+Processing by PlacesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"T2E/8ydzcy8HCGfqN/lfQrrtu5zZEt+4iQKZPl+n/Ho=", "place"=>{"name"=>"Kentucky Fried Chicken", "address"=>"111o1", "description"=>"Greasy and missing most of the eleven herbs and spices"}, "commit"=>"Create"}
+  [1m[35m (0.8ms)[0m  BEGIN
+  [1m[36mSQL (5.2ms)[0m  [1mINSERT INTO "places" ("address", "created_at", "description", "name", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["address", "111o1"], ["created_at", "2016-11-13 13:15:16.645346"], ["description", "Greasy and missing most of the eleven herbs and spices"], ["name", "Kentucky Fried Chicken"], ["updated_at", "2016-11-13 13:15:16.645346"]]
+  [1m[35m (0.9ms)[0m  COMMIT
+Completed 500 Internal Server Error in 37ms
+
+NameError (undefined local variable or method `redirect_to_root_path' for #<PlacesController:0x007fd437810048>
+Did you mean?  redirect_to):
+  app/controllers/places_controller.rb:11:in `create'
+
+
+  Rendered /Users/terrencebeckham/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /Users/terrencebeckham/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/terrencebeckham/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/terrencebeckham/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (65.1ms)
+
+
+Started POST "/places" for 127.0.0.1 at 2016-11-13 15:15:49 +0200
+Processing by PlacesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"T2E/8ydzcy8HCGfqN/lfQrrtu5zZEt+4iQKZPl+n/Ho=", "place"=>{"name"=>"Kentucky Fried Chicken", "address"=>"111o1", "description"=>"Greasy and missing most of the eleven herbs and spices"}, "commit"=>"Create"}
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "places" ("address", "created_at", "description", "name", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["address", "111o1"], ["created_at", "2016-11-13 13:15:49.370325"], ["description", "Greasy and missing most of the eleven herbs and spices"], ["name", "Kentucky Fried Chicken"], ["updated_at", "2016-11-13 13:15:49.370325"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 11ms (ActiveRecord: 3.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-13 15:15:49 +0200
+Processing by PlacesController#index as HTML
+  [1m[35mPlace Load (1.1ms)[0m  SELECT  "places".* FROM "places"  LIMIT 1 OFFSET 0
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "places"[0m
+  Rendered places/index.html.erb within layouts/application (27.3ms)
+Completed 200 OK in 113ms (Views: 110.0ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/master.css?body=1" for 127.0.0.1 at 2016-11-13 15:15:49 +0200
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2016-11-13 15:15:50 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-11-13 15:15:50 +0200
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2016-11-13 15:15:50 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-11-13 15:15:50 +0200
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2016-11-13 15:15:50 +0200
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2016-11-13 15:15:50 +0200
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2016-11-13 15:15:50 +0200
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2016-11-13 15:15:50 +0200
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2016-11-13 15:15:50 +0200
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2016-11-13 15:15:50 +0200
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2016-11-13 15:15:50 +0200
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2016-11-13 15:15:50 +0200
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2016-11-13 15:15:50 +0200
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2016-11-13 15:15:50 +0200
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2016-11-13 15:15:50 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-11-13 15:15:50 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-11-13 15:15:50 +0200
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2016-11-13 15:15:50 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-11-13 15:15:50 +0200
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2016-11-13 15:15:50 +0200
+
+
+Started GET "/assets/weather.png" for 127.0.0.1 at 2016-11-13 15:16:00 +0200
+
+
+Started GET "/?page=2" for 127.0.0.1 at 2016-11-13 15:16:03 +0200
+Processing by PlacesController#index as HTML
+  Parameters: {"page"=>"2"}
+  [1m[35mPlace Load (0.5ms)[0m  SELECT  "places".* FROM "places"  LIMIT 1 OFFSET 1
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "places"[0m
+  Rendered places/index.html.erb within layouts/application (17.6ms)
+Completed 200 OK in 99ms (Views: 97.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/?page=3" for 127.0.0.1 at 2016-11-13 15:16:05 +0200
+Processing by PlacesController#index as HTML
+  Parameters: {"page"=>"3"}
+  [1m[35mPlace Load (0.7ms)[0m  SELECT  "places".* FROM "places"  LIMIT 1 OFFSET 2
+  [1m[36m (0.8ms)[0m  [1mSELECT COUNT(*) FROM "places"[0m
+  Rendered places/index.html.erb within layouts/application (22.3ms)
+Completed 200 OK in 114ms (Views: 110.4ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/?page=4" for 127.0.0.1 at 2016-11-13 15:16:08 +0200
+Processing by PlacesController#index as HTML
+  Parameters: {"page"=>"4"}
+  [1m[35mPlace Load (0.6ms)[0m  SELECT  "places".* FROM "places"  LIMIT 1 OFFSET 3
+  [1m[36m (0.8ms)[0m  [1mSELECT COUNT(*) FROM "places"[0m
+  Rendered places/index.html.erb within layouts/application (24.3ms)
+Completed 200 OK in 110ms (Views: 107.6ms | ActiveRecord: 1.4ms)
