@@ -13485,3 +13485,163 @@ Started GET "/assets/weather.png" for 127.0.0.1 at 2016-11-13 18:42:29 +0200
 
 
 Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff2" for 127.0.0.1 at 2016-11-13 18:42:30 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-13 19:45:29 +0200
+Processing by PlacesController#index as HTML
+  [1m[35mPlace Load (0.6ms)[0m  SELECT  "places".* FROM "places"  LIMIT 1 OFFSET 0
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "places"[0m
+  Rendered places/index.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 88ms (Views: 86.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2016-11-13 19:45:29 +0200
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2016-11-13 19:45:29 +0200
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2016-11-13 19:45:29 +0200
+
+
+Started GET "/assets/master.css?body=1" for 127.0.0.1 at 2016-11-13 19:45:29 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-11-13 19:45:30 +0200
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2016-11-13 19:45:30 +0200
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2016-11-13 19:45:30 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-11-13 19:45:30 +0200
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2016-11-13 19:45:30 +0200
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2016-11-13 19:45:30 +0200
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2016-11-13 19:45:30 +0200
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2016-11-13 19:45:30 +0200
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2016-11-13 19:45:30 +0200
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2016-11-13 19:45:30 +0200
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2016-11-13 19:45:30 +0200
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2016-11-13 19:45:30 +0200
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2016-11-13 19:45:30 +0200
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2016-11-13 19:45:30 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-11-13 19:45:30 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-11-13 19:45:30 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-11-13 19:45:30 +0200
+
+
+Started GET "/assets/weather.png" for 127.0.0.1 at 2016-11-13 19:45:30 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-13 20:07:08 +0200
+Processing by PlacesController#index as HTML
+  [1m[35mPlace Load (0.8ms)[0m  SELECT  "places".* FROM "places"  LIMIT 1 OFFSET 0
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "places"[0m
+  Rendered places/index.html.erb within layouts/application (32.6ms)
+Completed 200 OK in 163ms (Views: 153.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2016-11-13 20:07:08 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-11-13 20:07:08 +0200
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2016-11-13 20:07:08 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-11-13 20:07:08 +0200
+
+
+Started GET "/assets/master.css?body=1" for 127.0.0.1 at 2016-11-13 20:07:08 +0200
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2016-11-13 20:07:08 +0200
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2016-11-13 20:07:08 +0200
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2016-11-13 20:07:08 +0200
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2016-11-13 20:07:08 +0200
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2016-11-13 20:07:08 +0200
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2016-11-13 20:07:08 +0200
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2016-11-13 20:07:08 +0200
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2016-11-13 20:07:08 +0200
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2016-11-13 20:07:08 +0200
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2016-11-13 20:07:08 +0200
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2016-11-13 20:07:08 +0200
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2016-11-13 20:07:08 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-11-13 20:07:08 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-11-13 20:07:08 +0200
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2016-11-13 20:07:08 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-11-13 20:07:08 +0200
+
+
+Started GET "/assets/weather.png" for 127.0.0.1 at 2016-11-13 20:07:09 +0200
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff2" for 127.0.0.1 at 2016-11-13 20:07:09 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to DeviseCreateUsers (20161113181124)
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (26.6ms)[0m  [1mCREATE TABLE "users" ("id" serial primary key, "email" character varying(255) DEFAULT '' NOT NULL, "encrypted_password" character varying(255) DEFAULT '' NOT NULL, "reset_password_token" character varying(255), "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" timestamp, "last_sign_in_at" timestamp, "current_sign_in_ip" inet, "last_sign_in_ip" inet, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (2.6ms)[0m  CREATE UNIQUE INDEX  "index_users_on_email" ON "users"  ("email")
+  [1m[36m (1.2ms)[0m  [1mCREATE UNIQUE INDEX  "index_users_on_reset_password_token" ON "users"  ("reset_password_token")[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20161113181124"]]
+  [1m[36m (6.2ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
