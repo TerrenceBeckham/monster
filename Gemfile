@@ -33,6 +33,8 @@ gem 'kaminari'
 
 gem 'simple_form'
 
+gem 'bundler-audit'
+
 
 gem 'devise'
 # Use ActiveModel has_secure_password
