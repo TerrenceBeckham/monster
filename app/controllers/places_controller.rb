@@ -25,6 +25,14 @@ before_action :authenticate_user!, only: [:new, :create]  #This relates to Devis
     
   end
 
+  def update
+    @place = Place.find(params[:id]) 
+    @place.update_attributes(place_params) #This finds the record that the user wants to update.
+    redirect_to root_path  
+  end
+
+
+
   private
 
 

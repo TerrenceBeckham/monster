@@ -23106,3 +23106,215 @@ Processing by PlacesController#edit as HTML
   [1m[36mPlace Load (1.0ms)[0m  [1mSELECT  "places".* FROM "places"  WHERE "places"."id" = $1 LIMIT 1[0m  [["id", 2]]
   Rendered places/edit.html.erb within layouts/application (28.3ms)
 Completed 200 OK in 149ms (Views: 142.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff2" for 127.0.0.1 at 2016-11-19 09:29:32 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-19 09:33:52 +0200
+Processing by PlacesController#index as HTML
+  [1m[35mPlace Load (0.4ms)[0m  SELECT  "places".* FROM "places"  LIMIT 1 OFFSET 0
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "places"[0m
+  Rendered places/index.html.erb within layouts/application (15.1ms)
+Completed 200 OK in 88ms (Views: 86.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/master.css?body=1" for 127.0.0.1 at 2016-11-19 09:33:52 +0200
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2016-11-19 09:33:52 +0200
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2016-11-19 09:33:52 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-11-19 09:33:52 +0200
+
+
+Started GET "/assets/weather.png" for 127.0.0.1 at 2016-11-19 09:33:52 +0200
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2016-11-19 09:33:52 +0200
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2016-11-19 09:33:52 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-11-19 09:33:52 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-11-19 09:33:52 +0200
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2016-11-19 09:33:52 +0200
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2016-11-19 09:33:52 +0200
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2016-11-19 09:33:52 +0200
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2016-11-19 09:33:52 +0200
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2016-11-19 09:33:52 +0200
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2016-11-19 09:33:52 +0200
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2016-11-19 09:33:52 +0200
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2016-11-19 09:33:52 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-11-19 09:33:52 +0200
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2016-11-19 09:33:52 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-11-19 09:33:52 +0200
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2016-11-19 09:33:52 +0200
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2016-11-19 09:33:52 +0200
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff2" for 127.0.0.1 at 2016-11-19 09:33:52 +0200
+
+
+Started PATCH "/places/2" for 127.0.0.1 at 2016-11-19 10:52:21 +0200
+Processing by PlacesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jTzPy/re29XOetzXR2huRuGxNose2kEppmPWb7/FIbA=", "place"=>{"name"=>"Hasans Fool Car#2", "address"=>"1 Corner of AlHaram and msaakin, Giza, Egypt 12222", "description"=>"Best fool in the world. Clean and healthy!"}, "commit"=>"Update", "id"=>"2"}
+  [1m[35mPlace Load (0.3ms)[0m  SELECT  "places".* FROM "places"  WHERE "places"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  UPDATE "places" SET "name" = $1, "updated_at" = $2 WHERE "places"."id" = 2  [["name", "Hasans Fool Car#2"], ["updated_at", "2016-11-19 08:52:21.793856"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 17ms (ActiveRecord: 3.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-19 10:52:21 +0200
+Processing by PlacesController#index as HTML
+  [1m[35mPlace Load (0.4ms)[0m  SELECT  "places".* FROM "places"  LIMIT 1 OFFSET 0
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "places"[0m
+  Rendered places/index.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 92ms (Views: 90.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2016-11-19 10:52:21 +0200
+
+
+Started GET "/assets/master.css?body=1" for 127.0.0.1 at 2016-11-19 10:52:21 +0200
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2016-11-19 10:52:21 +0200
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2016-11-19 10:52:21 +0200
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2016-11-19 10:52:21 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-11-19 10:52:21 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-11-19 10:52:21 +0200
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2016-11-19 10:52:21 +0200
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2016-11-19 10:52:21 +0200
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2016-11-19 10:52:21 +0200
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2016-11-19 10:52:21 +0200
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2016-11-19 10:52:21 +0200
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2016-11-19 10:52:21 +0200
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2016-11-19 10:52:21 +0200
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2016-11-19 10:52:21 +0200
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2016-11-19 10:52:21 +0200
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2016-11-19 10:52:22 +0200
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2016-11-19 10:52:22 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-11-19 10:52:22 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-11-19 10:52:22 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-11-19 10:52:22 +0200
+
+
+Started GET "/assets/weather.png" for 127.0.0.1 at 2016-11-19 10:52:22 +0200
+
+
+Started GET "/?page=2" for 127.0.0.1 at 2016-11-19 10:52:24 +0200
+Processing by PlacesController#index as HTML
+  Parameters: {"page"=>"2"}
+  [1m[35mPlace Load (0.4ms)[0m  SELECT  "places".* FROM "places"  LIMIT 1 OFFSET 1
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "places"[0m
+  Rendered places/index.html.erb within layouts/application (16.7ms)
+Completed 200 OK in 99ms (Views: 96.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/?page=3" for 127.0.0.1 at 2016-11-19 10:52:26 +0200
+Processing by PlacesController#index as HTML
+  Parameters: {"page"=>"3"}
+  [1m[35mPlace Load (0.4ms)[0m  SELECT  "places".* FROM "places"  LIMIT 1 OFFSET 2
+  [1m[36m (0.9ms)[0m  [1mSELECT COUNT(*) FROM "places"[0m
+  Rendered places/index.html.erb within layouts/application (18.1ms)
+Completed 200 OK in 92ms (Views: 89.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/?page=4" for 127.0.0.1 at 2016-11-19 10:52:27 +0200
+Processing by PlacesController#index as HTML
+  Parameters: {"page"=>"4"}
+  [1m[35mPlace Load (0.4ms)[0m  SELECT  "places".* FROM "places"  LIMIT 1 OFFSET 3
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "places"
+  Rendered places/index.html.erb within layouts/application (28.3ms)
+Completed 200 OK in 103ms (Views: 96.2ms | ActiveRecord: 5.5ms)
+
+
+Started GET "/?page=5" for 127.0.0.1 at 2016-11-19 10:52:28 +0200
+Processing by PlacesController#index as HTML
+  Parameters: {"page"=>"5"}
+  [1m[36mPlace Load (0.5ms)[0m  [1mSELECT  "places".* FROM "places"  LIMIT 1 OFFSET 4[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36m (1.3ms)[0m  [1mSELECT COUNT(*) FROM "places"[0m
+  Rendered places/index.html.erb within layouts/application (20.7ms)
+Completed 200 OK in 93ms (Views: 89.6ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/?page=6" for 127.0.0.1 at 2016-11-19 10:52:29 +0200
+Processing by PlacesController#index as HTML
+  Parameters: {"page"=>"6"}
+  [1m[35mPlace Load (0.5ms)[0m  SELECT  "places".* FROM "places"  LIMIT 1 OFFSET 5
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "places"[0m
+  Rendered places/index.html.erb within layouts/application (14.6ms)
+Completed 200 OK in 96ms (Views: 93.9ms | ActiveRecord: 1.0ms)
