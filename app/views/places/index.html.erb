@@ -1,6 +1,6 @@
 <% @places.each do |place| %>
 <div class="booyah-box col-xs-10 col-xs-offset-1"> <!-- Left "col" sets the left alignment and right "col" sets the right alignment -->
-  <h1><%= place.name %></h1>
+  <h1><%= link_to place.name, place_path(place) %></h1><br />  <!-- This code sends all clicks on the link to the show page -->
   <i><%= place.address %></i><br /><br />
   <p><%= place.description %></p><br />
 
