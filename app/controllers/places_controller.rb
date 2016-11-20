@@ -1,9 +1,9 @@
 class PlacesController < ApplicationController
-before_action :authenticate_user!, only: [:new, :create]  #This relates to Devise and only allows the above actions to be used if user is authenticated
+before_action :authenticate_user!, only: [:new, :create, :edit]  #This relates to Devise and only allows the above actions to be used if user is authenticated
 
 
   def index
-    @places = Place.page(params[:page]).per(1)
+    @places = Place.page(params[:page]).per(5)
   end
   def new
     @place =Place.new
@@ -20,13 +20,23 @@ before_action :authenticate_user!, only: [:new, :create]  #This relates to Devis
     @place = Place.find(params[:id])
   end
 
+
   def edit
     @place =Place.find(params[:id])
-    
+
+    if @place.user != current_user
+      return  render text: 'Not Allowed', status: :forbidden
+    end
   end
+
+
 
   def update
     @place = Place.find(params[:id]) 
+      if @place.user != current_user
+        return render text: 'Not Allowed', status: :forbidden
+        
+      end
     @place.update_attributes(place_params) #This finds the record that the user wants to update.
     redirect_to root_path  
   end
