@@ -1,5 +1,5 @@
 class PlacesController < ApplicationController
-before_action :authenticate_user!, only: [:new, :create, :edit]  #This relates to Devise and only allows the above actions to be used if user is authenticated
+before_action :authenticate_user!, only: [:new, :create, :edit, :destroy]  #This relates to Devise and only allows the above actions to be used if user is authenticated
 
 
   def index
@@ -43,6 +43,9 @@ before_action :authenticate_user!, only: [:new, :create, :edit]  #This relates t
 
   def destroy
     @place = Place.find(params[:id])
+    if @place.user != current_user
+      return render text: 'Not Allowed', status: :forbidden
+    end
     @place.destroy
     redirect_to root_path
     
