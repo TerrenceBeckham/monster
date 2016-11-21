@@ -9,12 +9,18 @@ before_action :authenticate_user!, only: [:new, :create, :edit, :destroy]  #This
     @place =Place.new
   end
 
+  
+
   def create
-    current_user.places.create(place_params)
-   
-    #Place.create(place_params)
-    redirect_to root_path
-  end
+    @place= current_user.places.create(place_params)
+      if @place.valid?
+        redirect_to root_path
+      else
+        render :new, status: :unprocessable_entity
+      end
+   end
+
+
 
   def show
     @place = Place.find(params[:id])
@@ -33,12 +39,18 @@ before_action :authenticate_user!, only: [:new, :create, :edit, :destroy]  #This
 
   def update
     @place = Place.find(params[:id]) 
-      if @place.user != current_user
+
+    if @place.user != current_user
         return render text: 'Not Allowed', status: :forbidden
-        
-      end
-    @place.update_attributes(place_params) #This finds the record that the user wants to update.
-    redirect_to root_path  
+    end
+
+    @place.update_attributes(place_params)
+    if @place.valid?#This finds the record that the user wants to update.
+    redirect_to root_path 
+    else 
+      render :edit, status: :unprocessable_entity
+    end
+
   end
 
   def destroy
