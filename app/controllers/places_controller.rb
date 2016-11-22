@@ -27,6 +27,8 @@ before_action :authenticate_user!, only: [:new, :create, :edit, :destroy]  #This
   end
 
 
+
+
   def edit
     @place =Place.find(params[:id])
 
@@ -34,6 +36,7 @@ before_action :authenticate_user!, only: [:new, :create, :edit, :destroy]  #This
       return  render text: 'Not Allowed', status: :forbidden
     end
   end
+  
 
 
 
@@ -52,6 +55,10 @@ before_action :authenticate_user!, only: [:new, :create, :edit, :destroy]  #This
     end
 
   end
+
+
+
+
 
   def destroy
     @place = Place.find(params[:id])
