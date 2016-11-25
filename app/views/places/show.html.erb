@@ -43,11 +43,6 @@
     <br />
 
 
-
-
-
-
-
   <div class="pull-right">
 
     <% if current_user && current_user == @place.user %> <!-- This loop ensures that only the user that made the page is allowed to delete it -->
@@ -57,3 +52,10 @@
     <% end %>
   </div>
 </div>
+
+<div class="clear"></div>
+<%= simple_form_for @comment, url: '#' do |f| %>
+  <%= f.input :message %>
+  <%= f.input :rating %>
+  <%= f.submit "Add a Comment", class: 'btn btn-primary' %>
+<% end %>

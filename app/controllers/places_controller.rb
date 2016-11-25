@@ -24,6 +24,7 @@ before_action :authenticate_user!, only: [:new, :create, :edit, :destroy]  #This
 
   def show
     @place = Place.find(params[:id])
+    @comment = Comment.new 
   end
 
 
