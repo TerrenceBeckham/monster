@@ -37082,3 +37082,49 @@ Started GET "/assets/weather.png" for 127.0.0.1 at 2016-11-23 20:55:38 +0200
 
 
 Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff2" for 127.0.0.1 at 2016-11-23 20:55:38 +0200
+
+
+Started GET "/?page=2" for 127.0.0.1 at 2016-11-23 21:12:21 +0200
+Processing by PlacesController#index as HTML
+  Parameters: {"page"=>"2"}
+  [1m[35mPlace Load (0.4ms)[0m  SELECT  "places".* FROM "places"  LIMIT 5 OFFSET 5
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "places"
+  Rendered places/index.html.erb within layouts/application (64.6ms)
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 205ms (Views: 203.1ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-11-23 21:12:21 +0200
+
+
+Started GET "/places/10" for 127.0.0.1 at 2016-11-23 21:12:26 +0200
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[35mPlace Load (0.5ms)[0m  SELECT  "places".* FROM "places"  WHERE "places"."id" = $1 LIMIT 1  [["id", 10]]
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered places/show.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 113ms (Views: 110.0ms | ActiveRecord: 1.2ms)
+  [1m[36mActiveRecord::SchemaMigration Load (70.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateComments (20161124192557)
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (15.1ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateComments (20161124192557)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (314.0ms)[0m  [1mCREATE TABLE "comments" ("id" serial primary key, "message" text, "rating" character varying(255), "user_id" integer, "place_id" integer, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35m (5.3ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateComments (20161124192557)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (15.3ms)[0m  [1mCREATE TABLE "comments" ("id" serial primary key, "message" text, "rating" character varying(255), "user_id" integer, "place_id" integer, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35m (10.0ms)[0m  CREATE  INDEX  "index_comments_on_user_id_and_place_id" ON "comments"  ("user_id", "place_id")
+  [1m[36m (1.4ms)[0m  [1mCREATE  INDEX  "index_comments_on_place_id" ON "comments"  ("place_id")[0m
+  [1m[35mSQL (11.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20161124192557"]]
+  [1m[36m (0.8ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
