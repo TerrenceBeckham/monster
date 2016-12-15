@@ -50892,3 +50892,59 @@ ActionController::ParameterMissing (param is missing or the value is empty: comm
   Rendered /Users/abdus-salam/.rvm/gems/ruby-2.2.3/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
   Rendered /Users/abdus-salam/.rvm/gems/ruby-2.2.3/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
   Rendered /Users/abdus-salam/.rvm/gems/ruby-2.2.3/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (38.9ms)
+
+
+Started GET "/places/2" for 127.0.0.1 at 2016-12-15 09:04:44 +0200
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT  "places".* FROM "places"  WHERE "places"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mPhoto Load (0.3ms)[0m  SELECT "photos".* FROM "photos"  WHERE "photos"."place_id" = $1  [["place_id", 2]]
+  [1m[36mComment Load (0.3ms)[0m  [1mSELECT "comments".* FROM "comments"  WHERE "comments"."place_id" = $1[0m  [["place_id", 2]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered places/show.html.erb within layouts/application (10.3ms)
+Completed 200 OK in 132ms (Views: 128.9ms | ActiveRecord: 1.9ms)
+  Rendered notification_mailer/comment_added.html.erb (2.2ms)
+  Rendered notification_mailer/comment_added.text.erb (0.3ms)
+
+NotificationMailer#comment_added: processed outbound mail in 810.7ms
+
+Sent mail to terrencebeckham@icloud.com (58.3ms)
+Date: Thu, 15 Dec 2016 10:02:39 +0200
+From: no-reply@nomsterapp.com
+To: terrencebeckham@icloud.com
+Message-ID: <58524e1f4df10_13293ff39345e1f8546ba@iMacs-iMac-3.local.mail>
+Subject: A comment has been added to your place
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_58524e1f41a85_13293ff39345e1f85451f";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_58524e1f41a85_13293ff39345e1f85451f
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hey There!
+
+Congrats. A comment has been added on Nomster
+
+Aloha,
+Teri
+----==_mimepart_58524e1f41a85_13293ff39345e1f85451f
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Hey There!</p>
+<p>
+Congrats! <b>A comment has been added on Nomster</b> 
+</p>
+
+Aloha, <br />
+Teri  
+----==_mimepart_58524e1f41a85_13293ff39345e1f85451f--
+
