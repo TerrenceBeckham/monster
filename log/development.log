@@ -50948,3 +50948,1046 @@ Aloha, <br />
 Teri  
 ----==_mimepart_58524e1f41a85_13293ff39345e1f85451f--
 
+
+
+Started GET "/" for 127.0.0.1 at 2016-12-16 06:57:18 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (29.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PlacesController#index as HTML
+  [1m[35mPlace Load (126.7ms)[0m  SELECT  "places".* FROM "places"  LIMIT 5 OFFSET 0
+  [1m[36mUser Load (13.9ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mComment Load (62.6ms)[0m  SELECT "comments".* FROM "comments"  WHERE "comments"."place_id" = $1  [["place_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mComment Load (0.4ms)[0m  [1mSELECT "comments".* FROM "comments"  WHERE "comments"."place_id" = $1[0m  [["place_id", 2]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mComment Load (0.3ms)[0m  SELECT "comments".* FROM "comments"  WHERE "comments"."place_id" = $1  [["place_id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mComment Load (0.3ms)[0m  SELECT "comments".* FROM "comments"  WHERE "comments"."place_id" = $1  [["place_id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mComment Load (0.3ms)[0m  SELECT "comments".* FROM "comments"  WHERE "comments"."place_id" = $1  [["place_id", 5]]
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "places"[0m
+  Rendered places/index.html.erb within layouts/application (1079.5ms)
+Completed 200 OK in 3235ms (Views: 2611.3ms | ActiveRecord: 311.2ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2016-12-16 06:57:22 +0200
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2016-12-16 06:57:22 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-12-16 06:57:22 +0200
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2016-12-16 06:57:22 +0200
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2016-12-16 06:57:22 +0200
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2016-12-16 06:57:22 +0200
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2016-12-16 06:57:22 +0200
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2016-12-16 06:57:22 +0200
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2016-12-16 06:57:22 +0200
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2016-12-16 06:57:22 +0200
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2016-12-16 06:57:22 +0200
+
+
+Started GET "/assets/master.css?body=1" for 127.0.0.1 at 2016-12-16 06:57:22 +0200
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2016-12-16 06:57:22 +0200
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2016-12-16 06:57:22 +0200
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2016-12-16 06:57:22 +0200
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2016-12-16 06:57:22 +0200
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2016-12-16 06:57:22 +0200
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2016-12-16 06:57:22 +0200
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2016-12-16 06:57:22 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-12-16 06:57:22 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-12-16 06:57:22 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-12-16 06:57:22 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-12-16 06:57:22 +0200
+
+
+Started GET "/assets/weather.png" for 127.0.0.1 at 2016-12-16 06:57:22 +0200
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff2" for 127.0.0.1 at 2016-12-16 06:57:22 +0200
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-12-16 06:57:25 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (401.4ms)
+Completed 200 OK in 511ms (Views: 475.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2016-12-16 06:57:37 +0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+PkDs83v9jObTHuvdt66BNp/CeYgtPfoGuWXFyl+0oA=", "user"=>{"email"=>"terrencebeckham@hotmail.com", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (42.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."email" = 'terrencebeckham@hotmail.com'  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  UPDATE "users" SET "current_sign_in_at" = $1, "last_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "users"."id" = 2  [["current_sign_in_at", "2016-12-16 04:57:37.853985"], ["last_sign_in_at", "2016-12-15 06:25:17.779697"], ["sign_in_count", 11], ["updated_at", "2016-12-16 04:57:37.855247"]]
+  [1m[36m (26.8ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 361ms (ActiveRecord: 69.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-12-16 06:57:37 +0200
+Processing by PlacesController#index as HTML
+  [1m[35mPlace Load (0.4ms)[0m  SELECT  "places".* FROM "places"  LIMIT 5 OFFSET 0
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mComment Load (0.3ms)[0m  SELECT "comments".* FROM "comments"  WHERE "comments"."place_id" = $1  [["place_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments"  WHERE "comments"."place_id" = $1[0m  [["place_id", 2]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments"  WHERE "comments"."place_id" = $1  [["place_id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments"  WHERE "comments"."place_id" = $1  [["place_id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments"  WHERE "comments"."place_id" = $1  [["place_id", 5]]
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "places"[0m
+  Rendered places/index.html.erb within layouts/application (16.7ms)
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 87ms (Views: 83.0ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2016-12-16 06:57:38 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-12-16 06:57:38 +0200
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2016-12-16 06:57:38 +0200
+
+
+Started GET "/assets/master.css?body=1" for 127.0.0.1 at 2016-12-16 06:57:38 +0200
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2016-12-16 06:57:38 +0200
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2016-12-16 06:57:38 +0200
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2016-12-16 06:57:38 +0200
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2016-12-16 06:57:38 +0200
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2016-12-16 06:57:38 +0200
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2016-12-16 06:57:38 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-12-16 06:57:38 +0200
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2016-12-16 06:57:38 +0200
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2016-12-16 06:57:38 +0200
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2016-12-16 06:57:38 +0200
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2016-12-16 06:57:38 +0200
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2016-12-16 06:57:38 +0200
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2016-12-16 06:57:38 +0200
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2016-12-16 06:57:38 +0200
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2016-12-16 06:57:38 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-12-16 06:57:38 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-12-16 06:57:38 +0200
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2016-12-16 06:57:38 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-12-16 06:57:38 +0200
+
+
+Started GET "/assets/weather.png" for 127.0.0.1 at 2016-12-16 06:57:38 +0200
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff2" for 127.0.0.1 at 2016-12-16 06:57:38 +0200
+
+
+Started GET "/places/1" for 127.0.0.1 at 2016-12-16 06:57:39 +0200
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPlace Load (38.4ms)[0m  [1mSELECT  "places".* FROM "places"  WHERE "places"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mPhoto Load (14.1ms)[0m  SELECT "photos".* FROM "photos"  WHERE "photos"."place_id" = $1  [["place_id", 1]]
+  [1m[36mComment Load (0.3ms)[0m  [1mSELECT "comments".* FROM "comments"  WHERE "comments"."place_id" = $1[0m  [["place_id", 1]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered places/show.html.erb within layouts/application (46.3ms)
+Completed 200 OK in 206ms (Views: 101.9ms | ActiveRecord: 68.0ms)
+
+
+Started POST "/places/1/photos" for 127.0.0.1 at 2016-12-16 06:58:03 +0200
+Processing by PhotosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"J18BT6za0irx2kFjedf+QYXh481HN9aXngZGYslvHgo=", "photo"=>{"picture"=>#<ActionDispatch::Http::UploadedFile:0x007fb02227a720 @tempfile=#<Tempfile:/var/folders/d9/g4kd5yr95bg3c88s3yhj2slh0000gp/T/RackMultipart20161216-2034-10rdzfs>, @original_filename="appeal-november-27-2016.JPG", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"photo[picture]\"; filename=\"appeal-november-27-2016.JPG\"\r\nContent-Type: image/jpeg\r\n">, "caption"=>"gfncghjfdh"}, "commit"=>"Add a Photo", "place_id"=>"1"}
+Completed 500 Internal Server Error in 4ms
+
+NoMethodError (undefined method `authenticate_user' for #<PhotosController:0x007fb023113728>):
+  activesupport (4.1.9) lib/active_support/callbacks.rb:424:in `block in make_lambda'
+  activesupport (4.1.9) lib/active_support/callbacks.rb:160:in `call'
+  activesupport (4.1.9) lib/active_support/callbacks.rb:160:in `block in halting'
+  activesupport (4.1.9) lib/active_support/callbacks.rb:229:in `call'
+  activesupport (4.1.9) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.9) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.9) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.9) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.9) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.9) lib/active_support/callbacks.rb:86:in `call'
+  activesupport (4.1.9) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.9) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.9) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.9) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.9) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.9) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.9) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.9) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.9) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.9) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.9) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.9) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.9) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.9) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.9) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.9) lib/action_dispatch/routing/route_set.rb:82:in `call'
+  actionpack (4.1.9) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.9) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.9) lib/action_dispatch/journey/router.rb:73:in `block in call'
+  actionpack (4.1.9) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.9) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.9) lib/action_dispatch/routing/route_set.rb:685:in `call'
+  warden (1.2.6) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.6) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.6) lib/warden/manager.rb:34:in `call'
+  rack (1.5.5) lib/rack/etag.rb:23:in `call'
+  rack (1.5.5) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.5) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.5) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.5) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/cookies.rb:562:in `call'
+  activerecord (4.1.9) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.9) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.9) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.9) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.9) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.9) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.9) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.9) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.9) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.9) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.9) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.9) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.9) lib/rails/engine.rb:514:in `call'
+  railties (4.1.9) lib/rails/application.rb:144:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/abdus-salam/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/abdus-salam/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/abdus-salam/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/abdus-salam/.rvm/gems/ruby-2.2.3/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /Users/abdus-salam/.rvm/gems/ruby-2.2.3/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/abdus-salam/.rvm/gems/ruby-2.2.3/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/abdus-salam/.rvm/gems/ruby-2.2.3/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (52.1ms)
+
+
+Started GET "/places/1" for 127.0.0.1 at 2016-12-16 06:58:32 +0200
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT  "places".* FROM "places"  WHERE "places"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mPhoto Load (0.3ms)[0m  SELECT "photos".* FROM "photos"  WHERE "photos"."place_id" = $1  [["place_id", 1]]
+  [1m[36mComment Load (0.4ms)[0m  [1mSELECT "comments".* FROM "comments"  WHERE "comments"."place_id" = $1[0m  [["place_id", 1]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered places/show.html.erb within layouts/application (27.9ms)
+Completed 200 OK in 123ms (Views: 100.4ms | ActiveRecord: 10.6ms)
+
+
+Started POST "/places/1/photos" for 127.0.0.1 at 2016-12-16 06:58:40 +0200
+Processing by PhotosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"J18BT6za0irx2kFjedf+QYXh481HN9aXngZGYslvHgo=", "photo"=>{"picture"=>#<ActionDispatch::Http::UploadedFile:0x007fb022be6e58 @tempfile=#<Tempfile:/var/folders/d9/g4kd5yr95bg3c88s3yhj2slh0000gp/T/RackMultipart20161216-2034-18tfjw5>, @original_filename="appeal-november-27-2016.JPG", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"photo[picture]\"; filename=\"appeal-november-27-2016.JPG\"\r\nContent-Type: image/jpeg\r\n">, "caption"=>"fasfsf"}, "commit"=>"Add a Photo", "place_id"=>"1"}
+  [1m[36mPlace Load (0.4ms)[0m  [1mSELECT  "places".* FROM "places"  WHERE "places"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Completed 500 Internal Server Error in 2ms
+
+NoMethodError (undefined method `photos' for nil:NilClass):
+  app/controllers/photos_controller.rb:6:in `create'
+
+
+  Rendered /Users/abdus-salam/.rvm/gems/ruby-2.2.3/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/abdus-salam/.rvm/gems/ruby-2.2.3/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/abdus-salam/.rvm/gems/ruby-2.2.3/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/abdus-salam/.rvm/gems/ruby-2.2.3/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (41.9ms)
+
+
+Started POST "/places/1/photos" for 127.0.0.1 at 2016-12-16 06:59:26 +0200
+Processing by PhotosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"J18BT6za0irx2kFjedf+QYXh481HN9aXngZGYslvHgo=", "photo"=>{"picture"=>#<ActionDispatch::Http::UploadedFile:0x007fb0234172d0 @tempfile=#<Tempfile:/var/folders/d9/g4kd5yr95bg3c88s3yhj2slh0000gp/T/RackMultipart20161216-2034-58i4yx>, @original_filename="appeal-november-27-2016.JPG", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"photo[picture]\"; filename=\"appeal-november-27-2016.JPG\"\r\nContent-Type: image/jpeg\r\n">, "caption"=>"fasfsf"}, "commit"=>"Add a Photo", "place_id"=>"1"}
+  [1m[35mPlace Load (0.3ms)[0m  SELECT  "places".* FROM "places"  WHERE "places"."id" = $1 LIMIT 1  [["id", 1]]
+Completed 500 Internal Server Error in 9ms
+
+NoMethodError (undefined method `photo' for nil:NilClass):
+  app/controllers/photos_controller.rb:6:in `create'
+
+
+  Rendered /Users/abdus-salam/.rvm/gems/ruby-2.2.3/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /Users/abdus-salam/.rvm/gems/ruby-2.2.3/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/abdus-salam/.rvm/gems/ruby-2.2.3/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/abdus-salam/.rvm/gems/ruby-2.2.3/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (38.7ms)
+
+
+Started POST "/places/1/photos" for 127.0.0.1 at 2016-12-16 06:59:35 +0200
+Processing by PhotosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"J18BT6za0irx2kFjedf+QYXh481HN9aXngZGYslvHgo=", "photo"=>{"picture"=>#<ActionDispatch::Http::UploadedFile:0x007fb024329e30 @tempfile=#<Tempfile:/var/folders/d9/g4kd5yr95bg3c88s3yhj2slh0000gp/T/RackMultipart20161216-2034-lb13a7>, @original_filename="appeal-november-27-2016.JPG", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"photo[picture]\"; filename=\"appeal-november-27-2016.JPG\"\r\nContent-Type: image/jpeg\r\n">, "caption"=>"sgrsgs"}, "commit"=>"Add a Photo", "place_id"=>"1"}
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT  "places".* FROM "places"  WHERE "places"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Completed 500 Internal Server Error in 1ms
+
+NoMethodError (undefined method `photo' for nil:NilClass):
+  app/controllers/photos_controller.rb:6:in `create'
+
+
+  Rendered /Users/abdus-salam/.rvm/gems/ruby-2.2.3/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /Users/abdus-salam/.rvm/gems/ruby-2.2.3/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/abdus-salam/.rvm/gems/ruby-2.2.3/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/abdus-salam/.rvm/gems/ruby-2.2.3/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (40.8ms)
+
+
+Started POST "/places/1/photos" for 127.0.0.1 at 2016-12-16 07:01:13 +0200
+Processing by PhotosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"J18BT6za0irx2kFjedf+QYXh481HN9aXngZGYslvHgo=", "photo"=>{"picture"=>#<ActionDispatch::Http::UploadedFile:0x007fb0237b35d8 @tempfile=#<Tempfile:/var/folders/d9/g4kd5yr95bg3c88s3yhj2slh0000gp/T/RackMultipart20161216-2034-nylnrt>, @original_filename="appeal-november-27-2016.JPG", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"photo[picture]\"; filename=\"appeal-november-27-2016.JPG\"\r\nContent-Type: image/jpeg\r\n">, "caption"=>"gretgyewtwtew"}, "commit"=>"Add a Photo", "place_id"=>"1"}
+  [1m[35mPlace Load (0.3ms)[0m  SELECT  "places".* FROM "places"  WHERE "places"."id" = $1 LIMIT 1  [["id", 1]]
+Completed 500 Internal Server Error in 9ms
+
+NoMethodError (undefined method `photo' for nil:NilClass):
+  app/controllers/photos_controller.rb:6:in `create'
+
+
+  Rendered /Users/abdus-salam/.rvm/gems/ruby-2.2.3/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /Users/abdus-salam/.rvm/gems/ruby-2.2.3/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.8ms)
+  Rendered /Users/abdus-salam/.rvm/gems/ruby-2.2.3/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/abdus-salam/.rvm/gems/ruby-2.2.3/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (37.3ms)
+
+
+Started POST "/places/1/photos" for 127.0.0.1 at 2016-12-16 07:03:02 +0200
+Processing by PhotosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"J18BT6za0irx2kFjedf+QYXh481HN9aXngZGYslvHgo=", "photo"=>{"picture"=>#<ActionDispatch::Http::UploadedFile:0x007fb023680fd0 @tempfile=#<Tempfile:/var/folders/d9/g4kd5yr95bg3c88s3yhj2slh0000gp/T/RackMultipart20161216-2034-1sln70b>, @original_filename="appeal-november-27-2016.JPG", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"photo[picture]\"; filename=\"appeal-november-27-2016.JPG\"\r\nContent-Type: image/jpeg\r\n">, "caption"=>"wq≈≈∑"}, "commit"=>"Add a Photo", "place_id"=>"1"}
+  [1m[36mPlace Load (0.2ms)[0m  [1mSELECT  "places".* FROM "places"  WHERE "places"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Completed 500 Internal Server Error in 1ms
+
+NoMethodError (undefined method `photo' for nil:NilClass):
+  app/controllers/photos_controller.rb:6:in `create'
+
+
+  Rendered /Users/abdus-salam/.rvm/gems/ruby-2.2.3/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/abdus-salam/.rvm/gems/ruby-2.2.3/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (13.5ms)
+  Rendered /Users/abdus-salam/.rvm/gems/ruby-2.2.3/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/abdus-salam/.rvm/gems/ruby-2.2.3/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (50.4ms)
+
+
+Started GET "/places/1" for 127.0.0.1 at 2016-12-16 07:16:13 +0200
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPlace Load (0.2ms)[0m  SELECT  "places".* FROM "places"  WHERE "places"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered places/show.html.erb within layouts/application (1.1ms)
+Completed 500 Internal Server Error in 25ms
+
+SyntaxError (/Users/abdus-salam/Dropbox/TheFirehoseProject/monster/app/views/places/show.html.erb:86: syntax error, unexpected ')', expecting =>
+...ion: Comment::RATINGS, :photo );@output_buffer.safe_append='...
+...                               ^
+/Users/abdus-salam/Dropbox/TheFirehoseProject/monster/app/views/places/show.html.erb:94: syntax error, unexpected keyword_end, expecting ')'
+'.freeze;       end 
+                   ^
+/Users/abdus-salam/Dropbox/TheFirehoseProject/monster/app/views/places/show.html.erb:194: syntax error, unexpected keyword_ensure, expecting ')'
+/Users/abdus-salam/Dropbox/TheFirehoseProject/monster/app/views/places/show.html.erb:196: syntax error, unexpected keyword_end, expecting ')'):
+  app/views/places/show.html.erb:86: syntax error, unexpected ')', expecting =>
+  app/views/places/show.html.erb:94: syntax error, unexpected keyword_end, expecting ')'
+  app/views/places/show.html.erb:194: syntax error, unexpected keyword_ensure, expecting ')'
+  app/views/places/show.html.erb:196: syntax error, unexpected keyword_end, expecting ')'
+
+
+  Rendered /Users/abdus-salam/.rvm/gems/ruby-2.2.3/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/abdus-salam/.rvm/gems/ruby-2.2.3/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/abdus-salam/.rvm/gems/ruby-2.2.3/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/abdus-salam/.rvm/gems/ruby-2.2.3/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (37.7ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-12-16 07:16:17 +0200
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1[0m
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 9ms (ActiveRecord: 2.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-12-16 07:16:17 +0200
+Processing by PlacesController#index as HTML
+  [1m[35mPlace Load (0.4ms)[0m  SELECT  "places".* FROM "places"  LIMIT 5 OFFSET 0
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments"  WHERE "comments"."place_id" = $1  [["place_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments"  WHERE "comments"."place_id" = $1[0m  [["place_id", 2]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments"  WHERE "comments"."place_id" = $1  [["place_id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments"  WHERE "comments"."place_id" = $1  [["place_id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments"  WHERE "comments"."place_id" = $1  [["place_id", 5]]
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "places"[0m
+  Rendered places/index.html.erb within layouts/application (37.7ms)
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 116ms (Views: 112.7ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/places/1" for 127.0.0.1 at 2016-12-16 07:16:19 +0200
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT  "places".* FROM "places"  WHERE "places"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered places/show.html.erb within layouts/application (1.6ms)
+Completed 500 Internal Server Error in 7ms
+
+SyntaxError (/Users/abdus-salam/Dropbox/TheFirehoseProject/monster/app/views/places/show.html.erb:86: syntax error, unexpected ')', expecting =>
+...ion: Comment::RATINGS, :photo );@output_buffer.safe_append='...
+...                               ^
+/Users/abdus-salam/Dropbox/TheFirehoseProject/monster/app/views/places/show.html.erb:94: syntax error, unexpected keyword_end, expecting ')'
+'.freeze;       end 
+                   ^
+/Users/abdus-salam/Dropbox/TheFirehoseProject/monster/app/views/places/show.html.erb:194: syntax error, unexpected keyword_ensure, expecting ')'
+/Users/abdus-salam/Dropbox/TheFirehoseProject/monster/app/views/places/show.html.erb:196: syntax error, unexpected keyword_end, expecting ')'):
+  app/views/places/show.html.erb:86: syntax error, unexpected ')', expecting =>
+  app/views/places/show.html.erb:94: syntax error, unexpected keyword_end, expecting ')'
+  app/views/places/show.html.erb:194: syntax error, unexpected keyword_ensure, expecting ')'
+  app/views/places/show.html.erb:196: syntax error, unexpected keyword_end, expecting ')'
+
+
+  Rendered /Users/abdus-salam/.rvm/gems/ruby-2.2.3/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /Users/abdus-salam/.rvm/gems/ruby-2.2.3/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/abdus-salam/.rvm/gems/ruby-2.2.3/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/abdus-salam/.rvm/gems/ruby-2.2.3/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (36.9ms)
+
+
+Started GET "/places/1" for 127.0.0.1 at 2016-12-16 07:16:45 +0200
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPlace Load (0.2ms)[0m  SELECT  "places".* FROM "places"  WHERE "places"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mPhoto Load (0.5ms)[0m  [1mSELECT "photos".* FROM "photos"  WHERE "photos"."place_id" = $1[0m  [["place_id", 1]]
+  [1m[35mComment Load (0.4ms)[0m  SELECT "comments".* FROM "comments"  WHERE "comments"."place_id" = $1  [["place_id", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered places/show.html.erb within layouts/application (233.9ms)
+Completed 200 OK in 307ms (Views: 303.8ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2016-12-16 07:16:45 +0200
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2016-12-16 07:16:45 +0200
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2016-12-16 07:16:45 +0200
+
+
+Started GET "/assets/master.css?body=1" for 127.0.0.1 at 2016-12-16 07:16:45 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-12-16 07:16:45 +0200
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2016-12-16 07:16:45 +0200
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2016-12-16 07:16:45 +0200
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2016-12-16 07:16:45 +0200
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2016-12-16 07:16:45 +0200
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2016-12-16 07:16:45 +0200
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2016-12-16 07:16:45 +0200
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2016-12-16 07:16:45 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-12-16 07:16:45 +0200
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2016-12-16 07:16:45 +0200
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2016-12-16 07:16:45 +0200
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2016-12-16 07:16:45 +0200
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2016-12-16 07:16:45 +0200
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2016-12-16 07:16:45 +0200
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2016-12-16 07:16:45 +0200
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2016-12-16 07:16:45 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-12-16 07:16:45 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-12-16 07:16:45 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-12-16 07:16:45 +0200
+
+
+Started GET "/assets/weather.png" for 127.0.0.1 at 2016-12-16 07:16:45 +0200
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff2" for 127.0.0.1 at 2016-12-16 07:16:45 +0200
+
+
+Started POST "/places/1/photos" for 127.0.0.1 at 2016-12-16 07:16:57 +0200
+Processing by PhotosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"J18BT6za0irx2kFjedf+QYXh481HN9aXngZGYslvHgo=", "photo"=>{"picture"=>#<ActionDispatch::Http::UploadedFile:0x007fb02262c328 @tempfile=#<Tempfile:/var/folders/d9/g4kd5yr95bg3c88s3yhj2slh0000gp/T/RackMultipart20161216-2034-ku9l9b>, @original_filename="appeal-november-27-2016.JPG", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"photo[picture]\"; filename=\"appeal-november-27-2016.JPG\"\r\nContent-Type: image/jpeg\r\n">, "caption"=>"wx∑´w≈´"}, "commit"=>"Add a Photo", "place_id"=>"1"}
+  [1m[35mPlace Load (0.2ms)[0m  SELECT  "places".* FROM "places"  WHERE "places"."id" = $1 LIMIT 1  [["id", 1]]
+Completed 500 Internal Server Error in 1ms
+
+NoMethodError (undefined method `photo' for nil:NilClass):
+  app/controllers/photos_controller.rb:6:in `create'
+
+
+  Rendered /Users/abdus-salam/.rvm/gems/ruby-2.2.3/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /Users/abdus-salam/.rvm/gems/ruby-2.2.3/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/abdus-salam/.rvm/gems/ruby-2.2.3/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/abdus-salam/.rvm/gems/ruby-2.2.3/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (40.8ms)
+
+
+Started POST "/places/1/photos" for 127.0.0.1 at 2016-12-16 07:17:59 +0200
+Processing by PhotosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"J18BT6za0irx2kFjedf+QYXh481HN9aXngZGYslvHgo=", "photo"=>{"picture"=>#<ActionDispatch::Http::UploadedFile:0x007fb023571bf8 @tempfile=#<Tempfile:/var/folders/d9/g4kd5yr95bg3c88s3yhj2slh0000gp/T/RackMultipart20161216-2034-1ntgd2t>, @original_filename="appeal-november-27-2016.JPG", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"photo[picture]\"; filename=\"appeal-november-27-2016.JPG\"\r\nContent-Type: image/jpeg\r\n">, "caption"=>"wx∑´w≈´"}, "commit"=>"Add a Photo", "place_id"=>"1"}
+  [1m[36mPlace Load (0.2ms)[0m  [1mSELECT  "places".* FROM "places"  WHERE "places"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Completed 500 Internal Server Error in 9ms
+
+NoMethodError (undefined method `create' for nil:NilClass):
+  app/controllers/photos_controller.rb:6:in `create'
+
+
+  Rendered /Users/abdus-salam/.rvm/gems/ruby-2.2.3/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /Users/abdus-salam/.rvm/gems/ruby-2.2.3/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/abdus-salam/.rvm/gems/ruby-2.2.3/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/abdus-salam/.rvm/gems/ruby-2.2.3/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (37.6ms)
+
+
+Started GET "/places/1" for 127.0.0.1 at 2016-12-16 07:18:01 +0200
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPlace Load (0.3ms)[0m  SELECT  "places".* FROM "places"  WHERE "places"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mPhoto Load (0.4ms)[0m  [1mSELECT "photos".* FROM "photos"  WHERE "photos"."place_id" = $1[0m  [["place_id", 1]]
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments"  WHERE "comments"."place_id" = $1  [["place_id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered places/show.html.erb within layouts/application (27.4ms)
+Completed 200 OK in 114ms (Views: 99.5ms | ActiveRecord: 7.9ms)
+
+
+Started POST "/places/1/photos" for 127.0.0.1 at 2016-12-16 07:18:11 +0200
+Processing by PhotosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"J18BT6za0irx2kFjedf+QYXh481HN9aXngZGYslvHgo=", "photo"=>{"picture"=>#<ActionDispatch::Http::UploadedFile:0x007fb022addd40 @tempfile=#<Tempfile:/var/folders/d9/g4kd5yr95bg3c88s3yhj2slh0000gp/T/RackMultipart20161216-2034-v519pf>, @original_filename="appeal-november-27-2016.JPG", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"photo[picture]\"; filename=\"appeal-november-27-2016.JPG\"\r\nContent-Type: image/jpeg\r\n">, "caption"=>"z222"}, "commit"=>"Add a Photo", "place_id"=>"1"}
+  [1m[35mPlace Load (0.2ms)[0m  SELECT  "places".* FROM "places"  WHERE "places"."id" = $1 LIMIT 1  [["id", 1]]
+Completed 500 Internal Server Error in 1ms
+
+NoMethodError (undefined method `create' for nil:NilClass):
+  app/controllers/photos_controller.rb:6:in `create'
+
+
+  Rendered /Users/abdus-salam/.rvm/gems/ruby-2.2.3/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /Users/abdus-salam/.rvm/gems/ruby-2.2.3/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/abdus-salam/.rvm/gems/ruby-2.2.3/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/abdus-salam/.rvm/gems/ruby-2.2.3/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (38.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-12-16 07:22:05 +0200
+Processing by PlacesController#index as HTML
+  [1m[36mPlace Load (0.4ms)[0m  [1mSELECT  "places".* FROM "places"  LIMIT 5 OFFSET 0[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mComment Load (0.3ms)[0m  [1mSELECT "comments".* FROM "comments"  WHERE "comments"."place_id" = $1[0m  [["place_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments"  WHERE "comments"."place_id" = $1  [["place_id", 2]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments"  WHERE "comments"."place_id" = $1[0m  [["place_id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments"  WHERE "comments"."place_id" = $1[0m  [["place_id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments"  WHERE "comments"."place_id" = $1[0m  [["place_id", 5]]
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "places"
+  Rendered places/index.html.erb within layouts/application (17.4ms)
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 90ms (Views: 86.2ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/places/1" for 127.0.0.1 at 2016-12-16 07:22:07 +0200
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPlace Load (0.4ms)[0m  SELECT  "places".* FROM "places"  WHERE "places"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mPhoto Load (0.3ms)[0m  [1mSELECT "photos".* FROM "photos"  WHERE "photos"."place_id" = $1[0m  [["place_id", 1]]
+  Rendered places/show.html.erb within layouts/application (10.5ms)
+Completed 500 Internal Server Error in 18ms
+
+ActionView::Template::Error (undefined method `photo' for #<Comment:0x007fb0223a3f20>):
+    84:      <div class="modal-body">
+    85:         <%= f.input :message %>
+    86:         <%= f.input :rating, as: :select, collection: Comment::RATINGS %>
+    87:         <%= f.input :photo %>   
+    88:      </div>
+    89: 
+    90:       <div class="modal-footer">
+  app/views/places/show.html.erb:87:in `block in _app_views_places_show_html_erb__3649888380203989139_70197232585240'
+  app/views/places/show.html.erb:83:in `_app_views_places_show_html_erb__3649888380203989139_70197232585240'
+
+
+  Rendered /Users/abdus-salam/.rvm/gems/ruby-2.2.3/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.8ms)
+  Rendered /Users/abdus-salam/.rvm/gems/ruby-2.2.3/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/abdus-salam/.rvm/gems/ruby-2.2.3/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (24.8ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2016-12-16 07:22:31 +0200
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2016-12-16 07:22:31 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-12-16 07:22:31 +0200
+
+
+Started GET "/assets/master.css?body=1" for 127.0.0.1 at 2016-12-16 07:22:31 +0200
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2016-12-16 07:22:31 +0200
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2016-12-16 07:22:31 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-12-16 07:22:31 +0200
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2016-12-16 07:22:31 +0200
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2016-12-16 07:22:31 +0200
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2016-12-16 07:22:31 +0200
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2016-12-16 07:22:31 +0200
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2016-12-16 07:22:31 +0200
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2016-12-16 07:22:31 +0200
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2016-12-16 07:22:31 +0200
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2016-12-16 07:22:31 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-12-16 07:22:31 +0200
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2016-12-16 07:22:31 +0200
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2016-12-16 07:22:32 +0200
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2016-12-16 07:22:32 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-12-16 07:22:32 +0200
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2016-12-16 07:22:32 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-12-16 07:22:32 +0200
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2016-12-16 07:22:32 +0200
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff2" for 127.0.0.1 at 2016-12-16 07:22:32 +0200
+
+
+Started GET "/assets/weather.png" for 127.0.0.1 at 2016-12-16 07:22:32 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2016-12-16 07:24:35 +0200
+Processing by PlacesController#index as HTML
+  [1m[35mPlace Load (0.3ms)[0m  SELECT  "places".* FROM "places"  LIMIT 5 OFFSET 0
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments"  WHERE "comments"."place_id" = $1  [["place_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments"  WHERE "comments"."place_id" = $1[0m  [["place_id", 2]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments"  WHERE "comments"."place_id" = $1  [["place_id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments"  WHERE "comments"."place_id" = $1  [["place_id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments"  WHERE "comments"."place_id" = $1  [["place_id", 5]]
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "places"[0m
+  Rendered places/index.html.erb within layouts/application (17.4ms)
+  [1m[35mUser Load (2.7ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 96ms (Views: 91.0ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2016-12-16 07:24:35 +0200
+
+
+Started GET "/assets/master.css?body=1" for 127.0.0.1 at 2016-12-16 07:24:35 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-12-16 07:24:35 +0200
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2016-12-16 07:24:35 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-12-16 07:24:35 +0200
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2016-12-16 07:24:35 +0200
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2016-12-16 07:24:35 +0200
+
+
+Started GET "/assets/master.css?body=1" for 127.0.0.1 at 2016-12-16 07:24:35 +0200
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2016-12-16 07:24:35 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-12-16 07:24:35 +0200
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2016-12-16 07:24:35 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-12-16 07:24:35 +0200
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2016-12-16 07:24:35 +0200
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2016-12-16 07:24:35 +0200
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2016-12-16 07:24:35 +0200
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2016-12-16 07:24:35 +0200
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2016-12-16 07:24:35 +0200
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2016-12-16 07:24:35 +0200
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2016-12-16 07:24:35 +0200
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2016-12-16 07:24:35 +0200
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2016-12-16 07:24:35 +0200
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2016-12-16 07:24:35 +0200
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2016-12-16 07:24:35 +0200
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2016-12-16 07:24:35 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-12-16 07:24:35 +0200
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2016-12-16 07:24:35 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-12-16 07:24:35 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-12-16 07:24:35 +0200
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2016-12-16 07:24:35 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-12-16 07:24:35 +0200
+
+
+Started GET "/assets/weather.png" for 127.0.0.1 at 2016-12-16 07:24:35 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-12-16 07:24:35 +0200
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2016-12-16 07:24:35 +0200
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-12-16 07:24:35 +0200
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1[0m
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2016-12-16 07:24:35 +0200
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2016-12-16 07:24:35 +0200
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2016-12-16 07:24:35 +0200
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2016-12-16 07:24:35 +0200
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2016-12-16 07:24:35 +0200
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2016-12-16 07:24:35 +0200
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2016-12-16 07:24:35 +0200
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2016-12-16 07:24:35 +0200
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2016-12-16 07:24:35 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-12-16 07:24:35 +0200
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2016-12-16 07:24:35 +0200
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff2" for 127.0.0.1 at 2016-12-16 07:24:35 +0200
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2016-12-16 07:24:35 +0200
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2016-12-16 07:24:35 +0200
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2016-12-16 07:24:35 +0200
+
+
+Started GET "/assets/weather.png" for 127.0.0.1 at 2016-12-16 07:24:36 +0200
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff2" for 127.0.0.1 at 2016-12-16 07:24:36 +0200
+
+
+Started GET "/places/1" for 127.0.0.1 at 2016-12-16 07:24:38 +0200
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPlace Load (0.3ms)[0m  SELECT  "places".* FROM "places"  WHERE "places"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered places/show.html.erb within layouts/application (1.2ms)
+Completed 500 Internal Server Error in 9ms
+
+SyntaxError (/Users/abdus-salam/Dropbox/TheFirehoseProject/monster/app/views/places/show.html.erb:86: syntax error, unexpected tSYMBEG, expecting '('
+..., collection: Comment::RATINGS:photo );@output_buffer.safe_a...
+...                               ^):
+  app/views/places/show.html.erb:86: syntax error, unexpected tSYMBEG, expecting '('
+
+
+  Rendered /Users/abdus-salam/.rvm/gems/ruby-2.2.3/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /Users/abdus-salam/.rvm/gems/ruby-2.2.3/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/abdus-salam/.rvm/gems/ruby-2.2.3/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/abdus-salam/.rvm/gems/ruby-2.2.3/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (37.5ms)
+
+
+Started GET "/places/1" for 127.0.0.1 at 2016-12-16 07:24:55 +0200
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT  "places".* FROM "places"  WHERE "places"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered places/show.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 7ms
+
+SyntaxError (/Users/abdus-salam/Dropbox/TheFirehoseProject/monster/app/views/places/show.html.erb:86: syntax error, unexpected tSYMBEG, expecting '('
+..., collection: Comment::RATINGS:Photo );@output_buffer.safe_a...
+...                               ^):
+  app/views/places/show.html.erb:86: syntax error, unexpected tSYMBEG, expecting '('
+
+
+  Rendered /Users/abdus-salam/.rvm/gems/ruby-2.2.3/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /Users/abdus-salam/.rvm/gems/ruby-2.2.3/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/abdus-salam/.rvm/gems/ruby-2.2.3/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/abdus-salam/.rvm/gems/ruby-2.2.3/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (35.9ms)
+  Rendered notification_mailer/comment_added.html.erb (1.3ms)
+  Rendered notification_mailer/comment_added.text.erb (0.3ms)
+
+NotificationMailer#comment_added: processed outbound mail in 640.1ms
+
+Sent mail to terrencebeckham@icloud.com (4406.4ms)
+Date: Fri, 16 Dec 2016 07:45:52 +0200
+From: no-reply@nomsterapp.com
+To: terrencebeckham@icloud.com
+Message-ID: <58537f90abf7a_c153ff66dc5e204408e@iMacs-iMac-3.local.mail>
+Subject: A comment has been added to your place
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_58537f909fa57_c153ff66dc5e204407a0";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_58537f909fa57_c153ff66dc5e204407a0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hey There!
+
+Congrats. A comment has been added on Nomster
+
+Aloha,
+Teri
+----==_mimepart_58537f909fa57_c153ff66dc5e204407a0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Hey There!</p>
+<p>
+Congrats! <b>A comment has been added on Nomster</b> 
+</p>
+
+Aloha, <br />
+Teri  
+----==_mimepart_58537f909fa57_c153ff66dc5e204407a0--
+
