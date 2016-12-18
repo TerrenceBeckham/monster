@@ -51991,3 +51991,1085 @@ Aloha, <br />
 Teri  
 ----==_mimepart_58537f909fa57_c153ff66dc5e204407a0--
 
+
+
+Started GET "/" for 127.0.0.1 at 2016-12-16 13:07:39 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (122.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PlacesController#index as HTML
+  [1m[35mPlace Load (22.4ms)[0m  SELECT  "places".* FROM "places"  LIMIT 5 OFFSET 0
+  [1m[36mUser Load (1.6ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mComment Load (40.0ms)[0m  SELECT "comments".* FROM "comments"  WHERE "comments"."place_id" = $1  [["place_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mComment Load (0.4ms)[0m  [1mSELECT "comments".* FROM "comments"  WHERE "comments"."place_id" = $1[0m  [["place_id", 2]]
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mComment Load (0.4ms)[0m  SELECT "comments".* FROM "comments"  WHERE "comments"."place_id" = $1  [["place_id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mComment Load (0.3ms)[0m  SELECT "comments".* FROM "comments"  WHERE "comments"."place_id" = $1  [["place_id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mComment Load (0.3ms)[0m  SELECT "comments".* FROM "comments"  WHERE "comments"."place_id" = $1  [["place_id", 5]]
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "places"[0m
+  Rendered places/index.html.erb within layouts/application (647.8ms)
+Completed 200 OK in 2879ms (Views: 2532.6ms | ActiveRecord: 95.7ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2016-12-16 13:07:43 +0200
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2016-12-16 13:07:43 +0200
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2016-12-16 13:07:43 +0200
+
+
+Started GET "/assets/master.css?body=1" for 127.0.0.1 at 2016-12-16 13:07:43 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-12-16 13:07:43 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-12-16 13:07:43 +0200
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2016-12-16 13:07:43 +0200
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2016-12-16 13:07:43 +0200
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2016-12-16 13:07:43 +0200
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2016-12-16 13:07:43 +0200
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2016-12-16 13:07:43 +0200
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2016-12-16 13:07:43 +0200
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2016-12-16 13:07:43 +0200
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2016-12-16 13:07:43 +0200
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2016-12-16 13:07:43 +0200
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2016-12-16 13:07:43 +0200
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2016-12-16 13:07:43 +0200
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2016-12-16 13:07:43 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-12-16 13:07:43 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-12-16 13:07:43 +0200
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2016-12-16 13:07:43 +0200
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2016-12-16 13:07:43 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-12-16 13:07:43 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2016-12-16 13:08:03 +0200
+Processing by PlacesController#index as HTML
+  [1m[35mPlace Load (0.5ms)[0m  SELECT  "places".* FROM "places"  LIMIT 5 OFFSET 0
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mComment Load (0.3ms)[0m  SELECT "comments".* FROM "comments"  WHERE "comments"."place_id" = $1  [["place_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments"  WHERE "comments"."place_id" = $1[0m  [["place_id", 2]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments"  WHERE "comments"."place_id" = $1  [["place_id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mComment Load (0.3ms)[0m  SELECT "comments".* FROM "comments"  WHERE "comments"."place_id" = $1  [["place_id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments"  WHERE "comments"."place_id" = $1  [["place_id", 5]]
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "places"[0m
+  Rendered places/index.html.erb within layouts/application (18.7ms)
+Completed 200 OK in 106ms (Views: 102.8ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2016-12-16 13:08:04 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-12-16 13:08:04 +0200
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2016-12-16 13:08:04 +0200
+
+
+Started GET "/assets/master.css?body=1" for 127.0.0.1 at 2016-12-16 13:08:04 +0200
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2016-12-16 13:08:04 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-12-16 13:08:04 +0200
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2016-12-16 13:08:04 +0200
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2016-12-16 13:08:04 +0200
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2016-12-16 13:08:04 +0200
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2016-12-16 13:08:04 +0200
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2016-12-16 13:08:04 +0200
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2016-12-16 13:08:04 +0200
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2016-12-16 13:08:04 +0200
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2016-12-16 13:08:04 +0200
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2016-12-16 13:08:04 +0200
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2016-12-16 13:08:04 +0200
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2016-12-16 13:08:04 +0200
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2016-12-16 13:08:04 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-12-16 13:08:04 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-12-16 13:08:04 +0200
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2016-12-16 13:08:04 +0200
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2016-12-16 13:08:04 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-12-16 13:08:04 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2016-12-18 09:21:55 +0200
+
+PG::ConnectionBad (could not connect to server: Connection refused
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+):
+  activerecord (4.1.9) lib/active_record/connection_adapters/postgresql_adapter.rb:888:in `initialize'
+  activerecord (4.1.9) lib/active_record/connection_adapters/postgresql_adapter.rb:888:in `new'
+  activerecord (4.1.9) lib/active_record/connection_adapters/postgresql_adapter.rb:888:in `connect'
+  activerecord (4.1.9) lib/active_record/connection_adapters/postgresql_adapter.rb:568:in `initialize'
+  activerecord (4.1.9) lib/active_record/connection_adapters/postgresql_adapter.rb:41:in `new'
+  activerecord (4.1.9) lib/active_record/connection_adapters/postgresql_adapter.rb:41:in `postgresql_connection'
+  activerecord (4.1.9) lib/active_record/connection_adapters/abstract/connection_pool.rb:435:in `new_connection'
+  activerecord (4.1.9) lib/active_record/connection_adapters/abstract/connection_pool.rb:445:in `checkout_new_connection'
+  activerecord (4.1.9) lib/active_record/connection_adapters/abstract/connection_pool.rb:416:in `acquire_connection'
+  activerecord (4.1.9) lib/active_record/connection_adapters/abstract/connection_pool.rb:351:in `block in checkout'
+  /Users/abdus-salam/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.1.9) lib/active_record/connection_adapters/abstract/connection_pool.rb:350:in `checkout'
+  activerecord (4.1.9) lib/active_record/connection_adapters/abstract/connection_pool.rb:265:in `block in connection'
+  /Users/abdus-salam/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.1.9) lib/active_record/connection_adapters/abstract/connection_pool.rb:264:in `connection'
+  activerecord (4.1.9) lib/active_record/connection_adapters/abstract/connection_pool.rb:541:in `retrieve_connection'
+  activerecord (4.1.9) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.1.9) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.1.9) lib/active_record/migration.rb:388:in `check_pending!'
+  activerecord (4.1.9) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.9) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.9) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.9) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.9) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.9) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.9) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.9) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.9) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.9) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.9) lib/rails/engine.rb:514:in `call'
+  railties (4.1.9) lib/rails/application.rb:144:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/abdus-salam/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/abdus-salam/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/abdus-salam/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/abdus-salam/.rvm/gems/ruby-2.2.3/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /Users/abdus-salam/.rvm/gems/ruby-2.2.3/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.8ms)
+  Rendered /Users/abdus-salam/.rvm/gems/ruby-2.2.3/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/abdus-salam/.rvm/gems/ruby-2.2.3/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (88.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-12-18 09:22:55 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (24.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PlacesController#index as HTML
+  [1m[35mPlace Load (38.9ms)[0m  SELECT  "places".* FROM "places"  LIMIT 5 OFFSET 0
+  [1m[36mUser Load (2.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mComment Load (28.8ms)[0m  SELECT "comments".* FROM "comments"  WHERE "comments"."place_id" = $1  [["place_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mComment Load (0.4ms)[0m  [1mSELECT "comments".* FROM "comments"  WHERE "comments"."place_id" = $1[0m  [["place_id", 2]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mComment Load (0.3ms)[0m  SELECT "comments".* FROM "comments"  WHERE "comments"."place_id" = $1  [["place_id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mComment Load (0.3ms)[0m  SELECT "comments".* FROM "comments"  WHERE "comments"."place_id" = $1  [["place_id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mComment Load (0.3ms)[0m  SELECT "comments".* FROM "comments"  WHERE "comments"."place_id" = $1  [["place_id", 5]]
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "places"[0m
+  Rendered places/index.html.erb within layouts/application (703.5ms)
+Completed 200 OK in 2668ms (Views: 2376.2ms | ActiveRecord: 106.5ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2016-12-18 09:22:58 +0200
+
+
+Started GET "/assets/master.css?body=1" for 127.0.0.1 at 2016-12-18 09:22:58 +0200
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2016-12-18 09:22:58 +0200
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2016-12-18 09:22:58 +0200
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2016-12-18 09:22:58 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-12-18 09:22:58 +0200
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2016-12-18 09:22:58 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-12-18 09:22:58 +0200
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2016-12-18 09:22:58 +0200
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2016-12-18 09:22:58 +0200
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2016-12-18 09:22:58 +0200
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2016-12-18 09:22:58 +0200
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2016-12-18 09:22:58 +0200
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2016-12-18 09:22:58 +0200
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2016-12-18 09:22:58 +0200
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2016-12-18 09:22:59 +0200
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2016-12-18 09:22:59 +0200
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2016-12-18 09:22:59 +0200
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2016-12-18 09:22:59 +0200
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2016-12-18 09:22:59 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-12-18 09:22:59 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-12-18 09:22:59 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-12-18 09:22:59 +0200
+
+
+Started GET "/assets/weather.png" for 127.0.0.1 at 2016-12-18 09:23:02 +0200
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff2" for 127.0.0.1 at 2016-12-18 09:23:02 +0200
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2016-12-18 09:23:38 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (399.5ms)
+Completed 200 OK in 505ms (Views: 504.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2016-12-18 09:24:31 +0200
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ULIaluF6DMu7FVOaQBd67ZEY6G77rmJJfEFhKFUMTvI=", "user"=>{"email"=>"terrencebeckham+EmailTest@icloud.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mUser Exists (35.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'terrencebeckham+emailtest@icloud.com' LIMIT 1[0m
+  [1m[35mSQL (7.5ms)[0m  INSERT INTO "users" ("created_at", "email", "encrypted_password", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2016-12-18 07:24:32.345918"], ["email", "terrencebeckham+emailtest@icloud.com"], ["encrypted_password", "$2a$11$npkjQaTJhTL697x8bISCheZYschL/teMT1ThhHDm0armYOLSmYcAK"], ["updated_at", "2016-12-18 07:24:32.345918"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "users" SET "current_sign_in_at" = $1, "current_sign_in_ip" = $2, "last_sign_in_at" = $3, "last_sign_in_ip" = $4, "sign_in_count" = $5, "updated_at" = $6 WHERE "users"."id" = 3[0m  [["current_sign_in_at", "2016-12-18 07:24:32.376502"], ["current_sign_in_ip", "127.0.0.1/32"], ["last_sign_in_at", "2016-12-18 07:24:32.376502"], ["last_sign_in_ip", "127.0.0.1/32"], ["sign_in_count", 1], ["updated_at", "2016-12-18 07:24:32.377468"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 395ms (ActiveRecord: 44.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-12-18 09:24:32 +0200
+Processing by PlacesController#index as HTML
+  [1m[36mPlace Load (0.4ms)[0m  [1mSELECT  "places".* FROM "places"  LIMIT 5 OFFSET 0[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mComment Load (0.3ms)[0m  [1mSELECT "comments".* FROM "comments"  WHERE "comments"."place_id" = $1[0m  [["place_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mComment Load (0.3ms)[0m  SELECT "comments".* FROM "comments"  WHERE "comments"."place_id" = $1  [["place_id", 2]]
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments"  WHERE "comments"."place_id" = $1[0m  [["place_id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments"  WHERE "comments"."place_id" = $1[0m  [["place_id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mComment Load (0.3ms)[0m  [1mSELECT "comments".* FROM "comments"  WHERE "comments"."place_id" = $1[0m  [["place_id", 5]]
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "places"
+  Rendered places/index.html.erb within layouts/application (19.1ms)
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 99ms (Views: 95.0ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2016-12-18 09:24:32 +0200
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2016-12-18 09:24:32 +0200
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2016-12-18 09:24:32 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-12-18 09:24:32 +0200
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2016-12-18 09:24:32 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-12-18 09:24:32 +0200
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2016-12-18 09:24:32 +0200
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2016-12-18 09:24:32 +0200
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2016-12-18 09:24:32 +0200
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2016-12-18 09:24:32 +0200
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2016-12-18 09:24:32 +0200
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2016-12-18 09:24:32 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-12-18 09:24:32 +0200
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2016-12-18 09:24:32 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-12-18 09:24:32 +0200
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff2" for 127.0.0.1 at 2016-12-18 09:24:32 +0200
+
+
+Started GET "/places/new" for 127.0.0.1 at 2016-12-18 09:24:37 +0200
+Processing by PlacesController#new as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered places/new.html.erb within layouts/application (29.2ms)
+Completed 200 OK in 136ms (Views: 133.8ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/places" for 127.0.0.1 at 2016-12-18 09:24:59 +0200
+Processing by PlacesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ULIaluF6DMu7FVOaQBd67ZEY6G77rmJJfEFhKFUMTvI=", "place"=>{"name"=>"Crackhouse", "address"=>"111 melville rd", "description"=>"Same old same old"}, "commit"=>"Create"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (52.1ms)[0m  [1mINSERT INTO "places" ("address", "created_at", "description", "latitude", "longitude", "name", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["address", "111 melville rd"], ["created_at", "2016-12-18 07:25:01.038873"], ["description", "Same old same old"], ["latitude", 40.82350417971611], ["longitude", -73.39906007051468], ["name", "Crackhouse"], ["updated_at", "2016-12-18 07:25:01.038873"], ["user_id", 3]]
+  [1m[35m (0.7ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 2196ms (ActiveRecord: 53.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-12-18 09:25:01 +0200
+Processing by PlacesController#index as HTML
+  [1m[36mPlace Load (0.4ms)[0m  [1mSELECT  "places".* FROM "places"  LIMIT 5 OFFSET 0[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments"  WHERE "comments"."place_id" = $1[0m  [["place_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mComment Load (0.3ms)[0m  SELECT "comments".* FROM "comments"  WHERE "comments"."place_id" = $1  [["place_id", 2]]
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments"  WHERE "comments"."place_id" = $1[0m  [["place_id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments"  WHERE "comments"."place_id" = $1[0m  [["place_id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mComment Load (0.3ms)[0m  [1mSELECT "comments".* FROM "comments"  WHERE "comments"."place_id" = $1[0m  [["place_id", 5]]
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "places"
+  Rendered places/index.html.erb within layouts/application (16.9ms)
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 88ms (Views: 84.5ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2016-12-18 09:25:01 +0200
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2016-12-18 09:25:01 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-12-18 09:25:01 +0200
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2016-12-18 09:25:01 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-12-18 09:25:01 +0200
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2016-12-18 09:25:01 +0200
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2016-12-18 09:25:01 +0200
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2016-12-18 09:25:01 +0200
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2016-12-18 09:25:01 +0200
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2016-12-18 09:25:01 +0200
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2016-12-18 09:25:01 +0200
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2016-12-18 09:25:01 +0200
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2016-12-18 09:25:01 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-12-18 09:25:01 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-12-18 09:25:01 +0200
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff2" for 127.0.0.1 at 2016-12-18 09:25:01 +0200
+
+
+Started GET "/?page=3" for 127.0.0.1 at 2016-12-18 09:25:04 +0200
+Processing by PlacesController#index as HTML
+  Parameters: {"page"=>"3"}
+  [1m[35mPlace Load (0.4ms)[0m  SELECT  "places".* FROM "places"  LIMIT 5 OFFSET 10
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments"  WHERE "comments"."place_id" = $1  [["place_id", 13]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments"  WHERE "comments"."place_id" = $1  [["place_id", 14]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments"  WHERE "comments"."place_id" = $1  [["place_id", 15]]
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "places"[0m
+  Rendered places/index.html.erb within layouts/application (63.5ms)
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 137ms (Views: 134.1ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/places/15" for 127.0.0.1 at 2016-12-18 09:25:07 +0200
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mPlace Load (0.4ms)[0m  [1mSELECT  "places".* FROM "places"  WHERE "places"."id" = $1 LIMIT 1[0m  [["id", 15]]
+  Rendered places/show.html.erb within layouts/application (1.1ms)
+Completed 500 Internal Server Error in 61ms
+
+SyntaxError (/Users/abdus-salam/Dropbox/TheFirehoseProject/monster/app/views/places/show.html.erb:86: syntax error, unexpected tSYMBEG, expecting '('
+..., collection: Comment::RATINGS:Photo );@output_buffer.safe_a...
+...                               ^):
+  app/views/places/show.html.erb:86: syntax error, unexpected tSYMBEG, expecting '('
+
+
+  Rendered /Users/abdus-salam/.rvm/gems/ruby-2.2.3/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/abdus-salam/.rvm/gems/ruby-2.2.3/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/abdus-salam/.rvm/gems/ruby-2.2.3/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/abdus-salam/.rvm/gems/ruby-2.2.3/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (41.7ms)
+
+
+Started GET "/places/15" for 127.0.0.1 at 2016-12-18 09:26:27 +0200
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[35mPlace Load (0.4ms)[0m  SELECT  "places".* FROM "places"  WHERE "places"."id" = $1 LIMIT 1  [["id", 15]]
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mPhoto Load (102.2ms)[0m  [1mSELECT "photos".* FROM "photos"  WHERE "photos"."place_id" = $1[0m  [["place_id", 15]]
+  [1m[35mComment Load (0.3ms)[0m  SELECT "comments".* FROM "comments"  WHERE "comments"."place_id" = $1  [["place_id", 15]]
+  Rendered places/show.html.erb within layouts/application (143.3ms)
+Completed 200 OK in 221ms (Views: 115.8ms | ActiveRecord: 103.8ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2016-12-18 09:26:27 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-12-18 09:26:27 +0200
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2016-12-18 09:26:27 +0200
+
+
+Started GET "/assets/master.css?body=1" for 127.0.0.1 at 2016-12-18 09:26:27 +0200
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2016-12-18 09:26:27 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-12-18 09:26:27 +0200
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2016-12-18 09:26:27 +0200
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2016-12-18 09:26:27 +0200
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2016-12-18 09:26:27 +0200
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2016-12-18 09:26:27 +0200
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2016-12-18 09:26:27 +0200
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2016-12-18 09:26:27 +0200
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2016-12-18 09:26:27 +0200
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2016-12-18 09:26:27 +0200
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2016-12-18 09:26:27 +0200
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2016-12-18 09:26:27 +0200
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2016-12-18 09:26:27 +0200
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2016-12-18 09:26:27 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-12-18 09:26:27 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-12-18 09:26:27 +0200
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2016-12-18 09:26:27 +0200
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2016-12-18 09:26:27 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-12-18 09:26:27 +0200
+
+
+Started GET "/assets/weather.png" for 127.0.0.1 at 2016-12-18 09:26:47 +0200
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff2" for 127.0.0.1 at 2016-12-18 09:26:47 +0200
+
+
+Started POST "/places/15/comments" for 127.0.0.1 at 2016-12-18 09:27:22 +0200
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ULIaluF6DMu7FVOaQBd67ZEY6G77rmJJfEFhKFUMTvI=", "comment"=>{"message"=>"This place rocks", "rating"=>"3_stars"}, "commit"=>"Add a Comment", "place_id"=>"15"}
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mPlace Load (0.4ms)[0m  SELECT  "places".* FROM "places"  WHERE "places"."id" = $1 LIMIT 1  [["id", 15]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (29.8ms)[0m  INSERT INTO "comments" ("created_at", "message", "place_id", "rating", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["created_at", "2016-12-18 07:27:22.359209"], ["message", "This place rocks"], ["place_id", 15], ["rating", "3_stars"], ["updated_at", "2016-12-18 07:27:22.359209"], ["user_id", 3]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/places/15
+Completed 302 Found in 36ms (ActiveRecord: 31.4ms)
+
+
+Started GET "/places/15" for 127.0.0.1 at 2016-12-18 09:27:22 +0200
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[35mPlace Load (0.3ms)[0m  SELECT  "places".* FROM "places"  WHERE "places"."id" = $1 LIMIT 1  [["id", 15]]
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mPhoto Load (0.3ms)[0m  [1mSELECT "photos".* FROM "photos"  WHERE "photos"."place_id" = $1[0m  [["place_id", 15]]
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments"  WHERE "comments"."place_id" = $1  [["place_id", 15]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered places/show.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 76ms (Views: 73.4ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2016-12-18 09:27:22 +0200
+
+
+Started GET "/assets/master.css?body=1" for 127.0.0.1 at 2016-12-18 09:27:22 +0200
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2016-12-18 09:27:22 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-12-18 09:27:22 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-12-18 09:27:22 +0200
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2016-12-18 09:27:22 +0200
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2016-12-18 09:27:22 +0200
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2016-12-18 09:27:22 +0200
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2016-12-18 09:27:22 +0200
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2016-12-18 09:27:22 +0200
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2016-12-18 09:27:22 +0200
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2016-12-18 09:27:22 +0200
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2016-12-18 09:27:22 +0200
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2016-12-18 09:27:22 +0200
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2016-12-18 09:27:22 +0200
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2016-12-18 09:27:22 +0200
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2016-12-18 09:27:22 +0200
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2016-12-18 09:27:22 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-12-18 09:27:22 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-12-18 09:27:22 +0200
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2016-12-18 09:27:22 +0200
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2016-12-18 09:27:22 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-12-18 09:27:22 +0200
+
+
+Started GET "/assets/weather.png" for 127.0.0.1 at 2016-12-18 09:27:22 +0200
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff2" for 127.0.0.1 at 2016-12-18 09:27:22 +0200
+  [1m[36mComment Load (0.9ms)[0m  [1mSELECT  "comments".* FROM "comments"   ORDER BY "comments"."id" DESC LIMIT 1[0m
+  [1m[35mPlace Load (0.7ms)[0m  SELECT  "places".* FROM "places"  WHERE "places"."id" = $1 LIMIT 1  [["id", 15]]
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered notification_mailer/comment_added.html.erb (14.0ms)
+  Rendered notification_mailer/comment_added.text.erb (0.3ms)
+
+NotificationMailer#comment_added: processed outbound mail in 1008.6ms
+
+Sent mail to terrencebeckham+emailtest@icloud.com (23871.2ms)
+Date: Sun, 18 Dec 2016 09:30:55 +0200
+From: no-reply@nomsterapp.com
+To: terrencebeckham+emailtest@icloud.com
+Message-ID: <58563b2f6c2f4_e723ff7b105e1f8169a@iMacs-iMac-3.local.mail>
+Subject: A comment has been added to your place
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_58563b2f6093e_e723ff7b105e1f8157b";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_58563b2f6093e_e723ff7b105e1f8157b
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hey There!
+
+Congrats. A comment has been added on Nomster
+
+Aloha,
+Teri
+----==_mimepart_58563b2f6093e_e723ff7b105e1f8157b
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Hey There!</p>
+<p>
+Congrats! <b>A comment has been added on Nomster</b> 
+</p>
+
+Aloha, <br />
+Teri  
+----==_mimepart_58563b2f6093e_e723ff7b105e1f8157b--
+
+  [1m[36mComment Load (1.1ms)[0m  [1mSELECT  "comments".* FROM "comments"   ORDER BY "comments"."id" DESC LIMIT 1[0m
+  [1m[35mPlace Load (0.6ms)[0m  SELECT  "places".* FROM "places"  WHERE "places"."id" = $1 LIMIT 1  [["id", 15]]
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered notification_mailer/comment_added.html.erb (1.2ms)
+  Rendered notification_mailer/comment_added.text.erb (0.2ms)
+
+NotificationMailer#comment_added: processed outbound mail in 322.8ms
+
+Sent mail to terrencebeckham+emailtest@icloud.com (6116.9ms)
+Date: Sun, 18 Dec 2016 09:36:15 +0200
+From: no-reply@nomsterapp.com
+To: terrencebeckham+emailtest@icloud.com
+Message-ID: <58563c6fe4ec4_eb93ff7b105e1f8167d@iMacs-iMac-3.local.mail>
+Subject: A comment has been added to Crackhouse
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_58563c6fe0c33_eb93ff7b105e1f8156c";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_58563c6fe0c33_eb93ff7b105e1f8156c
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hey There!
+
+Congrats. A comment has been added on Nomster
+
+Aloha,
+Teri
+----==_mimepart_58563c6fe0c33_eb93ff7b105e1f8156c
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Hey There!</p>
+<p>
+Congrats! <b>A comment has been added on Nomster</b> 
+</p>
+
+Aloha, <br />
+Teri  
+----==_mimepart_58563c6fe0c33_eb93ff7b105e1f8156c--
+
+
+
+Started POST "/places/15/comments" for 127.0.0.1 at 2016-12-18 09:37:10 +0200
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ULIaluF6DMu7FVOaQBd67ZEY6G77rmJJfEFhKFUMTvI=", "comment"=>{"message"=>"This place is a little smelly", "rating"=>"2_stars"}, "commit"=>"Add a Comment", "place_id"=>"15"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT  "places".* FROM "places"  WHERE "places"."id" = $1 LIMIT 1[0m  [["id", 15]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "comments" ("created_at", "message", "place_id", "rating", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2016-12-18 07:37:10.465612"], ["message", "This place is a little smelly"], ["place_id", 15], ["rating", "2_stars"], ["updated_at", "2016-12-18 07:37:10.465612"], ["user_id", 3]]
+  [1m[35m (0.6ms)[0m  COMMIT
+Redirected to http://localhost:3000/places/15
+Completed 302 Found in 102ms (ActiveRecord: 8.2ms)
+
+
+Started GET "/places/15" for 127.0.0.1 at 2016-12-18 09:37:10 +0200
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mPlace Load (0.4ms)[0m  [1mSELECT  "places".* FROM "places"  WHERE "places"."id" = $1 LIMIT 1[0m  [["id", 15]]
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mPhoto Load (0.3ms)[0m  SELECT "photos".* FROM "photos"  WHERE "photos"."place_id" = $1  [["place_id", 15]]
+  [1m[36mComment Load (0.3ms)[0m  [1mSELECT "comments".* FROM "comments"  WHERE "comments"."place_id" = $1[0m  [["place_id", 15]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered places/show.html.erb within layouts/application (13.7ms)
+Completed 200 OK in 211ms (Views: 168.7ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2016-12-18 09:37:10 +0200
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2016-12-18 09:37:10 +0200
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2016-12-18 09:37:10 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-12-18 09:37:10 +0200
+
+
+Started GET "/assets/master.css?body=1" for 127.0.0.1 at 2016-12-18 09:37:10 +0200
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2016-12-18 09:37:10 +0200
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2016-12-18 09:37:10 +0200
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2016-12-18 09:37:10 +0200
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2016-12-18 09:37:10 +0200
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2016-12-18 09:37:10 +0200
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2016-12-18 09:37:10 +0200
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2016-12-18 09:37:10 +0200
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2016-12-18 09:37:10 +0200
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2016-12-18 09:37:10 +0200
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2016-12-18 09:37:10 +0200
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2016-12-18 09:37:10 +0200
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2016-12-18 09:37:10 +0200
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2016-12-18 09:37:10 +0200
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2016-12-18 09:37:10 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-12-18 09:37:10 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-12-18 09:37:10 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-12-18 09:37:10 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-12-18 09:37:10 +0200
+
+
+Started GET "/assets/weather.png" for 127.0.0.1 at 2016-12-18 09:37:10 +0200
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff2" for 127.0.0.1 at 2016-12-18 09:37:10 +0200
+
+
+Started POST "/places/15/comments" for 127.0.0.1 at 2016-12-18 09:40:31 +0200
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ULIaluF6DMu7FVOaQBd67ZEY6G77rmJJfEFhKFUMTvI=", "comment"=>{"message"=>"I really think this is great", "rating"=>"3_stars"}, "commit"=>"Add a Comment", "place_id"=>"15"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mPlace Load (0.2ms)[0m  [1mSELECT  "places".* FROM "places"  WHERE "places"."id" = $1 LIMIT 1[0m  [["id", 15]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "comments" ("created_at", "message", "place_id", "rating", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2016-12-18 07:40:31.115426"], ["message", "I really think this is great"], ["place_id", 15], ["rating", "3_stars"], ["updated_at", "2016-12-18 07:40:31.115426"], ["user_id", 3]]
+  [1m[35m (0.7ms)[0m  COMMIT
+Redirected to http://localhost:3000/places/15
+Completed 302 Found in 5ms (ActiveRecord: 1.8ms)
+
+
+Started GET "/places/15" for 127.0.0.1 at 2016-12-18 09:40:31 +0200
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT  "places".* FROM "places"  WHERE "places"."id" = $1 LIMIT 1[0m  [["id", 15]]
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mPhoto Load (0.3ms)[0m  SELECT "photos".* FROM "photos"  WHERE "photos"."place_id" = $1  [["place_id", 15]]
+  [1m[36mComment Load (0.3ms)[0m  [1mSELECT "comments".* FROM "comments"  WHERE "comments"."place_id" = $1[0m  [["place_id", 15]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered places/show.html.erb within layouts/application (10.6ms)
+Completed 200 OK in 81ms (Views: 77.9ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2016-12-18 09:40:31 +0200
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2016-12-18 09:40:31 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-12-18 09:40:31 +0200
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2016-12-18 09:40:31 +0200
+
+
+Started GET "/assets/master.css?body=1" for 127.0.0.1 at 2016-12-18 09:40:31 +0200
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2016-12-18 09:40:31 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-12-18 09:40:31 +0200
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2016-12-18 09:40:31 +0200
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2016-12-18 09:40:31 +0200
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2016-12-18 09:40:31 +0200
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2016-12-18 09:40:31 +0200
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2016-12-18 09:40:31 +0200
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2016-12-18 09:40:31 +0200
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2016-12-18 09:40:31 +0200
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2016-12-18 09:40:31 +0200
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2016-12-18 09:40:31 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-12-18 09:40:31 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-12-18 09:40:31 +0200
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2016-12-18 09:40:31 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-12-18 09:40:31 +0200
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2016-12-18 09:40:31 +0200
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2016-12-18 09:40:31 +0200
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2016-12-18 09:40:31 +0200
+
+
+Started GET "/assets/weather.png" for 127.0.0.1 at 2016-12-18 09:40:31 +0200
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff2" for 127.0.0.1 at 2016-12-18 09:40:31 +0200
+  [1m[36mComment Load (0.9ms)[0m  [1mSELECT  "comments".* FROM "comments"   ORDER BY "comments"."id" DESC LIMIT 1[0m
+  [1m[35mPlace Load (0.6ms)[0m  SELECT  "places".* FROM "places"  WHERE "places"."id" = $1 LIMIT 1  [["id", 15]]
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered notification_mailer/comment_added.html.erb (14.7ms)
+  Rendered notification_mailer/comment_added.text.erb (0.7ms)
+
+NotificationMailer#comment_added: processed outbound mail in 943.3ms
+
+Sent mail to terrencebeckham+emailtest@icloud.com (3145.2ms)
+Date: Sun, 18 Dec 2016 09:42:25 +0200
+From: no-reply@nomsterapp.com
+To: terrencebeckham+emailtest@icloud.com
+Message-ID: <58563de14d134_f283ff7b105e1f816cf@iMacs-iMac-3.local.mail>
+Subject: A comment has been added to Crackhouse
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_58563de141d2e_f283ff7b105e1f8157f";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_58563de141d2e_f283ff7b105e1f8157f
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hey There!
+
+Congrats. A comment has been added on Nomster.
+Check it out, http://localhost:3000/places/15
+
+Aloha,
+Teri
+----==_mimepart_58563de141d2e_f283ff7b105e1f8157f
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Hey There!</p>
+<p>
+Congrats! <b>A comment has been added on Nomster</b> 
+Check it out <a href="http://localhost:3000/places/15">here</a>.
+</p>
+
+Aloha, <br />
+Teri  
+----==_mimepart_58563de141d2e_f283ff7b105e1f8157f--
+
