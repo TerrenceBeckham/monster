@@ -53073,3 +53073,201 @@ Aloha, <br />
 Teri  
 ----==_mimepart_58563de141d2e_f283ff7b105e1f8157f--
 
+  [1m[35mComment Load (0.6ms)[0m  SELECT  "comments".* FROM "comments"   ORDER BY "comments"."id" DESC LIMIT 1
+  [1m[36mComment Load (0.3ms)[0m  [1mSELECT  "comments".* FROM "comments"   ORDER BY "comments"."id" DESC LIMIT 1[0m
+  [1m[35mPlace Load (0.3ms)[0m  SELECT  "places".* FROM "places"  WHERE "places"."id" = $1 LIMIT 1  [["id", 15]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered notification_mailer/comment_added.html.erb (0.3ms)
+  Rendered notification_mailer/comment_added.text.erb (0.1ms)
+
+NotificationMailer#comment_added: processed outbound mail in 70.5ms
+
+Sent mail to terrencebeckham+emailtest@icloud.com (2982.9ms)
+Date: Sun, 18 Dec 2016 09:59:49 +0200
+From: no-reply@nomsterapp.com
+To: terrencebeckham+emailtest@icloud.com
+Message-ID: <585641f512d79_f283ff7b105e1f81884@iMacs-iMac-3.local.mail>
+Subject: A comment has been added to Crackhouse
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_585641f5125a8_f283ff7b105e1f81732";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_585641f5125a8_f283ff7b105e1f81732
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hey There!
+
+Congrats. A comment has been added on Nomster.
+Check it out, http://localhost:3000/places/15
+
+Aloha,
+Teri
+----==_mimepart_585641f5125a8_f283ff7b105e1f81732
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Hey There!</p>
+<p>
+Congrats! <b>A comment has been added on Nomster</b> 
+Check it out <a href="http://localhost:3000/places/15">here</a>.
+</p>
+
+Aloha, <br />
+Teri  
+----==_mimepart_585641f5125a8_f283ff7b105e1f81732--
+
+
+
+Started POST "/places/15/comments" for 127.0.0.1 at 2016-12-18 10:01:00 +0200
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ULIaluF6DMu7FVOaQBd67ZEY6G77rmJJfEFhKFUMTvI=", "comment"=>{"message"=>"I really need to leave this place", "rating"=>"4_stars"}, "commit"=>"Add a Comment", "place_id"=>"15"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mPlace Load (0.2ms)[0m  SELECT  "places".* FROM "places"  WHERE "places"."id" = $1 LIMIT 1  [["id", 15]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "comments" ("created_at", "message", "place_id", "rating", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["created_at", "2016-12-18 08:01:01.041316"], ["message", "I really need to leave this place"], ["place_id", 15], ["rating", "4_stars"], ["updated_at", "2016-12-18 08:01:01.041316"], ["user_id", 3]]
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered notification_mailer/comment_added.html.erb (0.6ms)
+  Rendered notification_mailer/comment_added.text.erb (0.3ms)
+
+NotificationMailer#comment_added: processed outbound mail in 237.7ms
+
+Sent mail to terrencebeckham+emailtest@icloud.com (3013.8ms)
+Date: Sun, 18 Dec 2016 10:01:01 +0200
+From: no-reply@nomsterapp.com
+To: terrencebeckham+emailtest@icloud.com
+Message-ID: <5856423d48387_e313fcea15d183014088@iMacs-iMac-3.local.mail>
+Subject: A comment has been added to Crackhouse
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5856423d47071_e313fcea15d1830139ef";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5856423d47071_e313fcea15d1830139ef
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hey There!
+
+Congrats. A comment has been added on Nomster.
+Check it out, http://localhost:3000/places/15
+
+Aloha,
+Teri
+----==_mimepart_5856423d47071_e313fcea15d1830139ef
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Hey There!</p>
+<p>
+Congrats! <b>A comment has been added on Nomster</b> 
+Check it out <a href="http://localhost:3000/places/15">here</a>.
+</p>
+
+Aloha, <br />
+Teri  
+----==_mimepart_5856423d47071_e313fcea15d1830139ef--
+
+  [1m[35m (0.9ms)[0m  COMMIT
+Redirected to http://localhost:3000/places/15
+Completed 302 Found in 3353ms (ActiveRecord: 8.7ms)
+
+
+Started GET "/places/15" for 127.0.0.1 at 2016-12-18 10:01:04 +0200
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mPlace Load (0.4ms)[0m  [1mSELECT  "places".* FROM "places"  WHERE "places"."id" = $1 LIMIT 1[0m  [["id", 15]]
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mPhoto Load (0.3ms)[0m  SELECT "photos".* FROM "photos"  WHERE "photos"."place_id" = $1  [["place_id", 15]]
+  [1m[36mComment Load (0.3ms)[0m  [1mSELECT "comments".* FROM "comments"  WHERE "comments"."place_id" = $1[0m  [["place_id", 15]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered places/show.html.erb within layouts/application (13.5ms)
+Completed 200 OK in 229ms (Views: 187.1ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2016-12-18 10:01:04 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-12-18 10:01:04 +0200
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2016-12-18 10:01:04 +0200
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2016-12-18 10:01:04 +0200
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2016-12-18 10:01:04 +0200
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2016-12-18 10:01:04 +0200
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2016-12-18 10:01:04 +0200
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2016-12-18 10:01:04 +0200
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2016-12-18 10:01:04 +0200
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2016-12-18 10:01:04 +0200
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2016-12-18 10:01:04 +0200
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2016-12-18 10:01:04 +0200
+
+
+Started GET "/assets/master.css?body=1" for 127.0.0.1 at 2016-12-18 10:01:04 +0200
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2016-12-18 10:01:04 +0200
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2016-12-18 10:01:04 +0200
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2016-12-18 10:01:04 +0200
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2016-12-18 10:01:04 +0200
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2016-12-18 10:01:04 +0200
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2016-12-18 10:01:04 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-12-18 10:01:04 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-12-18 10:01:04 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-12-18 10:01:04 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-12-18 10:01:04 +0200
+
+
+Started GET "/assets/weather.png" for 127.0.0.1 at 2016-12-18 10:01:04 +0200
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff2" for 127.0.0.1 at 2016-12-18 10:01:04 +0200
