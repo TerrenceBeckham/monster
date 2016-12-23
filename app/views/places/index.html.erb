@@ -3,6 +3,7 @@
   <h1><%= link_to place.name, place_path(place) %></h1><br />  <!-- This code sends all clicks on the link to the show page -->
   <i><%= place.address %></i><br /><br />
   <p><%= place.description %></p><br />
+  
 
   <% if place.user.present? %>
     <small><%= place.user.email %></small>

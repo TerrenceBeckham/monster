@@ -34,7 +34,7 @@ group :development do
   gem 'pry'
 end
 
-gem 'mini_magick'
+
 gem 'rails_12factor', group: :production
 gem 'kaminari'
 
@@ -46,7 +46,7 @@ gem "geocoder", "1.3.4"
 
 gem "mini_magick"
 gem "figaro", ">= 1.0.0"
-
+gem "fog"
 
 gem 'carrierwave', '>=1.0.0.rc', '< 2.0'
 
