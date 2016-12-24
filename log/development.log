@@ -61635,3 +61635,380 @@ Started GET "/assets/weather1.png" for 127.0.0.1 at 2016-12-24 09:11:12 +0200
 
 
 Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff2" for 127.0.0.1 at 2016-12-24 09:11:12 +0200
+
+
+Started GET "/users/2" for 127.0.0.1 at 2016-12-24 09:31:54 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "comments"  WHERE "comments"."user_id" = $1[0m  [["user_id", 2]]
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "comments"  WHERE "comments"."user_id" = $1 AND "comments"."rating" = '5_stars'  [["user_id", 2]]
+  Rendered users/show.html.erb within layouts/application (2.5ms)
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 184ms (Views: 181.8ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2016-12-24 09:31:55 +0200
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2016-12-24 09:31:55 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2016-12-24 09:31:55 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-12-24 09:31:55 +0200
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2016-12-24 09:31:55 +0200
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2016-12-24 09:31:55 +0200
+
+
+Started GET "/assets/master.css?body=1" for 127.0.0.1 at 2016-12-24 09:31:55 +0200
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2016-12-24 09:31:55 +0200
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2016-12-24 09:31:55 +0200
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2016-12-24 09:31:55 +0200
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2016-12-24 09:31:55 +0200
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2016-12-24 09:31:55 +0200
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2016-12-24 09:31:55 +0200
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2016-12-24 09:31:55 +0200
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2016-12-24 09:31:55 +0200
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2016-12-24 09:31:55 +0200
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2016-12-24 09:31:55 +0200
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2016-12-24 09:31:55 +0200
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2016-12-24 09:31:55 +0200
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2016-12-24 09:31:55 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2016-12-24 09:31:55 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-12-24 09:31:55 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-12-24 09:31:55 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-12-24 09:31:55 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-12-24 09:31:55 +0200
+
+
+Started GET "/assets/weather1.png" for 127.0.0.1 at 2016-12-24 09:32:00 +0200
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff2" for 127.0.0.1 at 2016-12-24 09:32:00 +0200
+
+
+Started GET "/users/2" for 127.0.0.1 at 2016-12-24 09:36:02 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "comments"  WHERE "comments"."user_id" = $1[0m  [["user_id", 2]]
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "comments"  WHERE "comments"."user_id" = $1 AND "comments"."rating" = '5_stars'  [["user_id", 2]]
+  Rendered users/show.html.erb within layouts/application (79.6ms)
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 515ms (Views: 512.2ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2016-12-24 09:36:03 +0200
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2016-12-24 09:36:03 +0200
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2016-12-24 09:36:03 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2016-12-24 09:36:03 +0200
+
+
+Started GET "/assets/master.css?body=1" for 127.0.0.1 at 2016-12-24 09:36:03 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-12-24 09:36:03 +0200
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2016-12-24 09:36:03 +0200
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2016-12-24 09:36:03 +0200
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2016-12-24 09:36:03 +0200
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2016-12-24 09:36:03 +0200
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2016-12-24 09:36:03 +0200
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2016-12-24 09:36:03 +0200
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2016-12-24 09:36:03 +0200
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2016-12-24 09:36:03 +0200
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2016-12-24 09:36:03 +0200
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2016-12-24 09:36:03 +0200
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2016-12-24 09:36:03 +0200
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2016-12-24 09:36:03 +0200
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2016-12-24 09:36:03 +0200
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2016-12-24 09:36:03 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2016-12-24 09:36:03 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-12-24 09:36:03 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-12-24 09:36:03 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-12-24 09:36:03 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-12-24 09:36:03 +0200
+
+
+Started GET "/assets/user.png" for 127.0.0.1 at 2016-12-24 09:36:08 +0200
+
+
+Started GET "/assets/weather1.png" for 127.0.0.1 at 2016-12-24 09:36:08 +0200
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff2" for 127.0.0.1 at 2016-12-24 09:36:08 +0200
+
+
+Started GET "/users/2" for 127.0.0.1 at 2016-12-24 09:39:15 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "comments"  WHERE "comments"."user_id" = $1[0m  [["user_id", 2]]
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "comments"  WHERE "comments"."user_id" = $1 AND "comments"."rating" = '5_stars'  [["user_id", 2]]
+  Rendered users/show.html.erb within layouts/application (3.1ms)
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 88ms (Views: 85.4ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2016-12-24 09:39:15 +0200
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2016-12-24 09:39:15 +0200
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2016-12-24 09:39:15 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2016-12-24 09:39:15 +0200
+
+
+Started GET "/assets/master.css?body=1" for 127.0.0.1 at 2016-12-24 09:39:15 +0200
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2016-12-24 09:39:15 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-12-24 09:39:15 +0200
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2016-12-24 09:39:15 +0200
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2016-12-24 09:39:15 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-12-24 09:39:15 +0200
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2016-12-24 09:39:15 +0200
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2016-12-24 09:39:15 +0200
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2016-12-24 09:39:15 +0200
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2016-12-24 09:39:15 +0200
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2016-12-24 09:39:15 +0200
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2016-12-24 09:39:15 +0200
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2016-12-24 09:39:15 +0200
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2016-12-24 09:39:15 +0200
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2016-12-24 09:39:15 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-12-24 09:39:15 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-12-24 09:39:15 +0200
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2016-12-24 09:39:15 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2016-12-24 09:39:15 +0200
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2016-12-24 09:39:15 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-12-24 09:39:15 +0200
+
+
+Started GET "/assets/user.png" for 127.0.0.1 at 2016-12-24 09:39:16 +0200
+
+
+Started GET "/assets/weather1.png" for 127.0.0.1 at 2016-12-24 09:39:16 +0200
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff2" for 127.0.0.1 at 2016-12-24 09:39:16 +0200
+
+
+Started GET "/users/2" for 127.0.0.1 at 2016-12-24 09:39:47 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "comments"  WHERE "comments"."user_id" = $1[0m  [["user_id", 2]]
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "comments"  WHERE "comments"."user_id" = $1 AND "comments"."rating" = '5_stars'  [["user_id", 2]]
+  Rendered users/show.html.erb within layouts/application (2.8ms)
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 80ms (Views: 77.4ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2016-12-24 09:39:47 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2016-12-24 09:39:47 +0200
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2016-12-24 09:39:47 +0200
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2016-12-24 09:39:47 +0200
+
+
+Started GET "/assets/master.css?body=1" for 127.0.0.1 at 2016-12-24 09:39:47 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-12-24 09:39:47 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-12-24 09:39:47 +0200
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2016-12-24 09:39:47 +0200
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2016-12-24 09:39:47 +0200
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2016-12-24 09:39:47 +0200
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2016-12-24 09:39:47 +0200
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2016-12-24 09:39:47 +0200
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2016-12-24 09:39:47 +0200
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2016-12-24 09:39:47 +0200
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2016-12-24 09:39:47 +0200
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2016-12-24 09:39:47 +0200
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2016-12-24 09:39:47 +0200
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2016-12-24 09:39:47 +0200
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2016-12-24 09:39:47 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-12-24 09:39:47 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-12-24 09:39:47 +0200
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2016-12-24 09:39:47 +0200
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2016-12-24 09:39:47 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2016-12-24 09:39:47 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-12-24 09:39:47 +0200
+
+
+Started GET "/assets/user.png" for 127.0.0.1 at 2016-12-24 09:39:49 +0200
+
+
+Started GET "/assets/weather1.png" for 127.0.0.1 at 2016-12-24 09:39:49 +0200
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff2" for 127.0.0.1 at 2016-12-24 09:39:49 +0200
