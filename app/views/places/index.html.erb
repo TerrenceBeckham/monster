@@ -40,9 +40,16 @@
   <p><%= place.description %></p><br />
 
 
+
   <% if place.user.present? %>
     <small><%= place.user.email %></small>
   <% end %>
+  
+   <% if place.photos.present? %>
+       <div class="col-12">
+         <%= image_tag place.photos.last, :class => 'img-fluid' %>
+       </div>
+     <% end %>
 
  <% if place.comments.present? %>
   <div class="col-xs-12">
@@ -52,11 +59,13 @@
       <% end %>
       <%= place.comments.last.message %>
       <small><%= place.comments.last.user.email %></small>
+      <% place.photo %>
     </blockquote>
   </div>
 <% end %>
 </div>
 
 <% end %>
+
 
  <%= paginate @places %>  
