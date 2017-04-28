@@ -8,7 +8,7 @@
   <!-- Wrapper for slides -->
   <div class="carousel-inner">
     <div class="item active">
-      <%= image_tag 'slider5.jpg', class: 'img-responsive' %>
+      <%= image_tag 'macdonalds.jpg', class: 'img-responsive' %>
       <div class="carousel-caption">
         Find the best American Food in Egypt
       </div>
@@ -46,20 +46,22 @@
   <% if place.user.present? %>
     <small><%= place.user.email %></small>
   <% end %>
-    <% if place.photos.present? %>
-        <%= image_tag place.photos.last.picture, class: 'img-fluid img-index float-right' %>
-        </div>
-    <% end %>
+
  <% if place.comments.present? %>
   <div class="col-xs-12">
     <blockquote>
       <% if place.comments.last.humanized_rating.present? %>
-        <b><%= place.comments.last.humanized_rating %></b> -
+        <b><%= place.comments.last.humanized_rating %></b>
       <% end %>
       <%= place.comments.last.message %>
-      <small><%= place.comments.last.user.email %></small>
-      <div class="col-12">
 
+      <div class="col-12">
+      <% if place.photos.present? %>
+
+            <%= image_tag place.photos.last.picture, class: 'img-fluid img-index float-right' %>
+            <small><%= place.comments.last.user.email %></small>
+            </div>
+      <% end %>
       
     </blockquote>
   </div>
