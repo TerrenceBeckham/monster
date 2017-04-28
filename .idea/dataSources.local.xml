@@ -12,9 +12,12 @@
       <user-name>postgres</user-name>
     </data-source>
     <data-source name="Rails monster: development" uuid="cb7d6896-518e-465a-ad35-58c58782ba75">
-      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
-      <first-sync>true</first-sync>
+      <database-info product="PostgreSQL" version="9.6.1" jdbc-version="4.0" driver-name="PostgreSQL Native Driver" driver-version="PostgreSQL 9.4 JDBC4 (build 1201)">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
       <user-name>postgres</user-name>
+      <introspection-schemas>nomster_development:public</introspection-schemas>
     </data-source>
   </component>
 </project>

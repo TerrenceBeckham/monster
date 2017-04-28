@@ -3,7 +3,6 @@
   <ol class="carousel-indicators">
     <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
     <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-    
   </ol>
 
   <!-- Wrapper for slides -->
@@ -11,13 +10,13 @@
     <div class="item active">
       <%= image_tag 'slider5.jpg', class: 'img-responsive' %>
       <div class="carousel-caption">
-        Find the best Chinese Food in South Carolina
+        Find the best American Food in Egypt
       </div>
     </div>
       <div class="item">
-    <%= image_tag 'slider8.jpg', class: 'img-responsive' %>
+    <%= image_tag 'kfc.png', class: 'img-responsive' %>
     <div class="carousel-caption">
-      Looking for the general?
+      Going abroad for adventure? Eat American
     </div>
     </div>  
   </div>
@@ -33,8 +32,11 @@
 
 
 
-<% @places.each do |place| %>
-<div class="booyah-box col-xs-10 col-xs-offset-1"> <!-- Left "col" sets the left alignment and right "col" sets the right alignment -->
+  <% @places.each do |place| %>
+  <div class="booyah-box col-xs-10 col-xs-offset-1"> <!-- Left "col" sets the left alignment and right "col" sets the right alignment -->
+
+
+
   <h1><%= link_to place.name, place_path(place) %></h1><br />  <!-- This code sends all clicks on the link to the show page -->
   <i><%= place.address %></i><br /><br />
   <p><%= place.description %></p><br />
@@ -44,12 +46,6 @@
   <% if place.user.present? %>
     <small><%= place.user.email %></small>
   <% end %>
-  
-   <% if place.photos.present? %>
-       <div class="col-12">
-         <%= image_tag place.photos.last, :class => 'img-fluid' %>
-       </div>
-     <% end %>
 
  <% if place.comments.present? %>
   <div class="col-xs-12">
@@ -59,7 +55,13 @@
       <% end %>
       <%= place.comments.last.message %>
       <small><%= place.comments.last.user.email %></small>
-      <% place.photo %>
+      <div class="col-12">
+      <% if place.photos.present? %>
+
+            <%= image_tag place.photos.last.picture, class: 'img-fluid img-index float-right' %>
+          </div>
+      <% end %>
+      
     </blockquote>
   </div>
 <% end %>

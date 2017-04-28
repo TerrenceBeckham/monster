@@ -5,9 +5,11 @@ before_action :authenticate_user!, only: [:new, :create, :edit, :destroy]  #This
   def index
     @places = Place.page(params[:page]).per(5)
   end
+
   def new
     @place =Place.new
   end
+
 
   
 
