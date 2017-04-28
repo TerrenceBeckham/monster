@@ -46,7 +46,10 @@
   <% if place.user.present? %>
     <small><%= place.user.email %></small>
   <% end %>
-
+    <% if place.photos.present? %>
+        <%= image_tag place.photos.last.picture, class: 'img-fluid img-index float-right' %>
+        </div>
+    <% end %>
  <% if place.comments.present? %>
   <div class="col-xs-12">
     <blockquote>
@@ -56,11 +59,7 @@
       <%= place.comments.last.message %>
       <small><%= place.comments.last.user.email %></small>
       <div class="col-12">
-      <% if place.photos.present? %>
 
-            <%= image_tag place.photos.last.picture, class: 'img-fluid img-index float-right' %>
-          </div>
-      <% end %>
       
     </blockquote>
   </div>
